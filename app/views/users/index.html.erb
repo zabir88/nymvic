@@ -25,6 +25,9 @@
             <%= link_to "Volunteer", '/pages/volunteer'%>
           </li>
           <li>
+            <a class="page-scroll" href="#v-registration">Voter Registration</a>
+          </li>
+          <li>
             <a class="page-scroll" href="#contact">Contact</a>
           </li>
         </ul>
@@ -77,7 +80,7 @@
   </section>
 
   <!-- Voter Section -->
-  <section class="content-section text-center">
+  <section id= "v-registration" class="content-section text-center">
     <div class="download-section">
       <div class="container">
         <div class='row'>
@@ -86,8 +89,8 @@
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv200x165v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="http://vr.rockthevote.com/images/widget/rtv-200x165-v2.gif"/>
               <div class='row'>
-                <br>
-                <button class= 'btn btn-default btn-lg'>become a registered voter </button>
+                <br><br>
+                <button class= 'btn btn-default btn-lg btn-register'>click to be a registered voter </button>
               </div>
             </a>
             <%= javascript_include_tag "https://s3.amazonaws.com/ovr/widget_loader.js" %>
@@ -96,6 +99,12 @@
       </div>
     </div>
   </section>
+
+  <!-- Map Section -->
+    <div id="map">
+      <h2 class='text-center'>Join our voter registration 2016 contest!</h2>
+    </div>
+
 
   <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
@@ -119,6 +128,7 @@
             </div>
         </div>
     </section>
+    <%= render "footer" %>
 
   
   
