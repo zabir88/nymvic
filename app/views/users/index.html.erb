@@ -1,0 +1,219 @@
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+ 
+ <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">
+          New York Muslim Voter Club
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <%= link_to "About Us", '/pages/about'%>
+          </li>
+          <li>
+            <%= link_to "Volunteer", '/pages/volunteer'%>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="brand-heading">It is about time to vote</h1>
+            <p class="intro-text">Voting is free, its power and your duty as a citizen. NYC muslims are registering to vote more than ever.</p>
+            <a href="#nymvic" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NYMVIC Section -->
+  <section id="nymvic" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>New York Muslim Voter and Information Club</h2>
+        <p>NYMVIC – the New York Muslim Voter and Information Club - was created to fill a void in the absence of a political voice for the New York City (“NYC”) and New York State (“NY”) Muslim population.</p>
+        <p>There are hundreds of thousands of US Muslim citizens in NYC alone, and approximately one million Muslims in NY representing a variety of heritages and languages whose voice has gone mostly unheard in NY politics.</p>
+        <h3> We are here to bridge that gap. </h3>
+      </div>
+    </div><br><br>
+    <div class='row'>
+      <div class='col-sm-4'>
+        <h4>Stay informed.</h4>
+        <%= link_to "Join us its free!", "#modal-1", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" %> 
+      </div>  
+      <div class='col-sm-4'>
+        <h4>Tell your friends.</h4>
+        <%= link_to "Spread the word!", "#modal-2", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" %>
+      </div>
+      <div class='col-sm-4'>
+        <h4>Support us.</h4>
+        <%= link_to "donate us!", "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" %>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voter Section -->
+  <section class="content-section text-center">
+    <div class="download-section">
+      <div class="container">
+        <div class='row'>
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>Voter Registration</h1>
+            <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv200x165v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
+              <img src="http://vr.rockthevote.com/images/widget/rtv-200x165-v2.gif"/>
+              <div class='row'>
+                <br>
+                <button class= 'btn btn-default btn-lg'>become a registered voter </button>
+              </div>
+            </a>
+            <%= javascript_include_tag "https://s3.amazonaws.com/ovr/widget_loader.js" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Modal-1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class='modal-dialog'>
+      <div class="modal-content">
+        <!--Modal Header-->
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal' aria-hidden= 'true'>x</button>
+          <h2 class='modal-title text-center'> You made the right choice!</h2>
+        </div> <br> 
+        <!--Modal Body-->
+        <div class="modal-body text-center">
+         <%= render "form" %> 
+        </div>
+      </div>  
+    </div>
+  </div>
+  <!--Modal-2 -->
+  <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class='modal-dialog'>
+      <div class="modal-content">
+        <!--Modal Header-->
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal' aria-hidden= 'true'>x</button>
+          <h2 class='modal-title text-center'> The more the better</h2>
+        </div> <br> 
+        <!--Modal Body-->
+        <div class="modal-body text-center">
+          <p>Share with your friends.</p>
+          <ul class="list-inline banner-social-buttons">
+            <li>
+              <a href="https://twitter.com/intent/tweet?text=http://nymvic.org/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=http://nymvic.org/&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/share?url=[http://nymvic.org/]" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <!--Modal-3 -->
+  <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class='modal-dialog'>
+      <div class="modal-content">
+        <!--Modal Header-->
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal' aria-hidden= 'true'>x</button>
+          <h2 class='modal-title text-center'> Why Donate, If It's Free?</h2>
+        </div> <br> 
+        <!--Modal Body-->
+        <div class="modal-body text-center">
+          <p>We’re just starting. With your kind support, we’ll be able to afford full time staff to serve our community.</p>  
+          <ul class="list-inline banner-social-buttons">
+            <li>
+              <a href="#" class="btn btn-default btn-lg"><i class="fa fa-paypal"></i> <span class="network-name">PayPal</span></a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-default btn-lg"><i class="fa fa-cc-mastercard"></i> <span class="network-name">MasterCard</span></a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-default btn-lg"><i class="fa fa-cc-visa"></i> <span class="network-name">VISA</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+  </div>
