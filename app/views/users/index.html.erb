@@ -49,7 +49,7 @@
   <!-- NYMVIC Section -->
   <section id="nymvic" class="container content-section text-center">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-xs-12">
         <h2>New York Muslim Voter and Information Club</h2>
         <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count. <%= link_to "Click Here", "/pages/about", style: 'font-weight: bold;' %> to learn more.</p>
         <p>There are hundreds of thousands of US Muslim citizens in NYC alone, and approximately one million Muslims in NY representing a variety of heritages and languages whose voice has gone mostly unheard in NY politics.</p>
@@ -77,12 +77,12 @@
     <div class="download-section">
       <div class="container">
         <div class='row'>
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-xs-12">
             <h1>Voter Registration</h1>
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv200x165v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="http://vr.rockthevote.com/images/widget/rtv-200x165-v2.gif"/>
               <div class='row'>
-                <br><br><br><br>
+                <br><br>
                 <button class= 'btn btn-default btn-lg btn-register'>click to be a registered voter </button>
               </div>
             </a>
@@ -96,7 +96,7 @@
   <!-- Contact Section -->
   <section id="contact" class="container content-section text-center">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
+      <div class="col-xs-12">
         <h2>Contact NYMVIC</h2>
         <p>Feel free to email us to provide some feedback, give us suggestions, or to just say hello!</p>
         <p><a href="mailto:nymvic@gmail.com" style= 'color:#19804D; font-size: 30px; font-weight: bold;'>nymvic@gmail.com</a></p>
@@ -107,20 +107,14 @@
   <footer>
     <div class="container-fluid text-center">
       <div class='row'>
-        <div class='col-xs-4'>
-          <ul style="list-style-type:none">
-            <li>
-              <%= link_to "About Us", "/pages/about", style: 'color: #fff; font-size: 20px;' %>
-            </li>
-            <li>
-              <%= link_to "Volunteer", "/pages/volunteer", style: 'color: #fff; font-size: 20px;' %>
-            </li>
-          </ul>
+        <div class='col-sm-4'>
+          <%= link_to "About Us", "/pages/about", style: 'color: #fff; font-size: 20px;' %><br>
+          <%= link_to "Volunteer", "/pages/volunteer", style: 'color: #fff; font-size: 20px;' %>
         </div>
-        <div class='col-xs-4'>
+        <div class='col-sm-4'>
           <p>Copyright &copy; NYMVIC 2016</p>
         </div>
-        <div class='col-xs-4'>
+        <div class='col-sm-4'>
           <p> Follow Us</p>
           <ul class="list-inline">
             <li>
