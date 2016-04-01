@@ -2,8 +2,8 @@ class PagesController < ApplicationController
 	def about
 		render template: "pages/#{params[:about]}"
 	end
-
-	def contact
-		render template: "pages/#{params[:contact]}"
+	def volunteer
+		render template: "pages/#{params[:volunteer]}"
 	end
+
 end

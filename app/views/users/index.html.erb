@@ -7,9 +7,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
-          NYMVC
-        </a>
+        <a class="navbar-brand page-scroll" href="#page-top">NYMVIC</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -19,16 +17,13 @@
             <a href="#page-top"></a>
           </li>
           <li>
+            <a class="page-scroll" href="#nymvic">Join us</a>
+          </li>
+          <li>
             <a class="page-scroll" href="#v-registration">Voter Registration</a>
           </li>
           <li>
-            <a class="page-scroll" href="#map">Volunteer</a>
-          </li>
-          <li>
-            <%= link_to "About Us", '/pages/about'%>
-          </li>
-          <li>
-            <%= link_to "Contact Us", '/pages/contact'%>
+            <a class="page-scroll" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -58,7 +53,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
         <h2>New York Muslim Voter and Information Club</h2>
-        <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count.</p>
+        <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count. <%= link_to "Click Here", "/pages/about" %> to learn more.</p>
         <p>There are hundreds of thousands of US Muslim citizens in NYC alone, and approximately one million Muslims in NY representing a variety of heritages and languages whose voice has gone mostly unheard in NY politics.</p>
         <h3> We are here to bridge that gap. </h3>
       </div>
@@ -74,7 +69,7 @@
       </div>
       <div class='col-sm-4'>
         <h4>Support us.</h4>
-        <%= link_to "donate us!", "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" %>
+        <%= link_to "donate!", "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" %>
       </div>
     </div>
   </section>
@@ -100,31 +95,49 @@
     </div>
   </section>
 
-  <!-- Map Section -->
-  <div id="map" class='container'>
-    <h2 class='text-center'>Join our voter registration 2016 contest!</h2>
-    <h2 class='text-center'>NYMVIC NEEDS VOLUNTEERS!</h2>
-    <%= image_tag "volunteer.jpg", size: '400x200', :class=> "img-responsive center-block " %><br>
-    <p class= 'text-center'>Take a More Active Role In Your CommunityAnd Get Involved With NYMVIC To Empower Your Community.If You Want To Volunteer, Please Text Naji Almontaser at 917-559-8485.</p>
-  </div><br><br><br>
-  <%= render "footer" %>
-
+  <!-- Contact Section -->
+  <section id="contact" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Contact NYMVIC</h2>
+        <p>Feel free to email us to provide some feedback, give us suggestions, or to just say hello!</p>
+        <p><a href="mailto:nymvic@gmail.com" style= 'color:#19804D; font-size: 30px; font-weight: bold;'>nymvic@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
   
+  <footer>
+    <div class="container-fluid text-center">
+      <div class='row'>
+        <div class='col-xs-3'>
+          <ul style="list-style-type:none">
+            <li>
+              <%= link_to "About Us", "/pages/about", style: 'color: #fff; font-size: 22px;' %>
+            </li>
+            <li>
+              <%= link_to "Oppurtunities", "/pages/volunteer", style: 'color: #fff; font-size: 22px;' %>
+            </li>
+          </ul>
+        </div>
+        <div class='col-xs-3'>
+          <p>Copyright &copy; NYMVIC 2016</p>
+        </div>
+        <div class='col-xs-6'>
+          <ul class="list-inline banner-social-buttons">
+            <p style="display:inline"> Follow Us At</p>
+            <li>
+              <a href="https://twitter.com/nymvic" class="btn btn-default btn-sm"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/NYMVIC/info?tab=page_info" class="btn btn-default btn-sm"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+            </li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+  </footer>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Modal-1 -->
+  <!--Modal-1 -->
   <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class='modal-dialog'>
       <div class="modal-content">
