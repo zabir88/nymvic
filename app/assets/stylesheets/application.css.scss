@@ -159,13 +159,14 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 60px;
     color:#000;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+    color:  #00FF00;
 }
 
 @media(min-width:768px) {
@@ -180,8 +181,10 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 600;
+        color:  #00FF00;
+        
     }
 }
 
@@ -194,7 +197,7 @@ a:focus {
     border-radius: 100%!important;
     font-size: 40px;
     color: #000;
-    background: 0 0;
+    background: #fff;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -204,7 +207,7 @@ a:focus {
 .btn-circle:focus {
     outline: 0;
     color: #000;
-    background: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.5);
 }
 
 .btn-circle i.animated {
