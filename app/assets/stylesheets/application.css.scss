@@ -180,7 +180,7 @@ a:focus {
     border-radius: 100%!important;
     font-size: 30px;
     color: #F80000;
-    background: 0 0;
+    background:rgba(255,255,255,.3);
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -189,8 +189,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #000;
-    background: rgba(255,255,255,.3);
+    color: #F80000;
+    background: rgba(255,255,255,.7);
 }
 
 .btn-circle i.animated {
