@@ -65,7 +65,7 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     font-weight: 800;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -115,9 +115,9 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 20px 0;
+        padding: 15px 0;
         border-bottom: 0;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
         background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -133,7 +133,7 @@ a:focus {
 }
 
 .intro {
-    display: table;
+    display: block;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -142,21 +142,21 @@ a:focus {
     background: url(vote.png) no-repeat top left scroll;
     background-color: #000;
     /* WebKit */
-    -webkit-background-size: 100% 65%;
+    -webkit-background-size: 100% 70%;
     /* Firefox */
-    -moz-background-size: 100% 65%;
+    -moz-background-size: 100% 70%;
     /* Opera, later Google Chrome */
-    background-size: 100% 65%;
-    -o-background-size: 100% 65%;
+    background-size: 100% 70%;
+    -o-background-size: 100% 70%;
 }
 
 .intro .intro-body {
-    display: table-cell;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    margin-top: 650px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -171,7 +171,8 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 60px;
+        font-size: 50px;
+        margin-top: 700px;
         color: #fff;
     }
 
@@ -279,7 +280,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 180px;
     }
 
     .voter-section {
