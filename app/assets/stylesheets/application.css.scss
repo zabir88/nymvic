@@ -2,17 +2,17 @@
 @import "bootstrap";
 
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
     background-color: #fff;
-}
-
-html {
-    width: 100%;
-    height: 100%;
 }
 
 h1,
@@ -30,20 +30,20 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
 
 a {
-    color: #19804D;
+    color: #F80000;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -52,11 +52,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
-}
-
-.light {
-    font-weight: 400;
+    color: #ffb833;
 }
 
 .navbar-custom {
@@ -64,11 +60,12 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color:#000;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 40px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -78,7 +75,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #F80000;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -87,7 +84,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #F80000;
 }
 
 .navbar-custom .nav li a {
@@ -98,32 +95,29 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
+    color:#ffb833;
+    background-color: rgba(255,255,255,.3);
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
-    background-color: transparent;
+    background-color:rgba(255,255,255, .6);
 }
 
 .navbar-custom .nav li.active {
     outline: 0;
 }
 
-.navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
-}
-
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #F80000;
 }
 
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
+        font-size: 16px;
         letter-spacing: 1px;
         background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -144,8 +138,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background: url(main.jpg) no-repeat bottom center scroll;
+    color: #000;
+    background: url(vote.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -159,14 +153,11 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 60px;
-    color:#000;
+    font-size: 40px;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 30px;
-    font-weight: 600;
-    color: #00b300;
+    font-size: 18px;
 }
 
 @media(min-width:768px) {
@@ -177,14 +168,10 @@ a:focus {
 
     .intro .intro-body .brand-heading {
         font-size: 100px;
-        color:#000;
     }
 
     .intro .intro-body .intro-text {
-        font-size: 40px;
-        font-weight: 600;
-        color: #00b300;
-        
+        font-size: 26px;
     }
 }
 
@@ -196,8 +183,8 @@ a:focus {
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -206,8 +193,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #000;
-    background: rgba(255,255,255,.5);
+    color: #fff;
+    background: rgba(255,255,255,.1);
 }
 
 .btn-circle i.animated {
@@ -266,35 +253,36 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.voter-section {
     width: 100%;
     padding: 50px 0;
-    color: #000;
-    background: url(vote.png) no-repeat center center scroll;
+    color: #fff;
+    background: url() no-repeat center center scroll;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-#volunteer {
+#contact {
     width: 100%;
-    height: 200px;
-    margin-top: 50px;
+    height: 100%;
+    margin-top: 100px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 200px;
     }
 
-    .download-section {
+    .voter-section {
         padding: 100px 0;
     }
 
-    #volunteer {
-        height: 400px;
-        margin-top: 250px;
+    #contact {
+        height: 100%;
+        margin-top: 200px;
     }
 }
 
@@ -302,42 +290,29 @@ a:focus {
     border-radius: 2;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .btn-default {
-    border: 2px solid #19804D;
+    border: 1px solid #F80000;;
     color: #fff;
-    background-color: #19804D ;
+    background-color: #F80000;;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 2px solid #19804D;
-    outline: 2;
-    color:#19804D;
-    background-color:#fff ;
-}
-.btn-register{
-    background-color: #fff; 
-    color: #000;
-    border: 2px solid #fff;  
-}
-.btn-register:hover,
-.btn-register:focus {
-    border: 2px solid #000;
-    outline: 2;
-    color: #fff;
-    background-color: #000;
+    border: 1px solid #F80000;;
+    outline: 0;
+    color: #F80000;;
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
     margin-top: 0;
 }
-
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
@@ -361,7 +336,6 @@ footer {
     padding: 50px 0;
     color: #fff;
     background-color: #000;
-    width: 100%;
 }
 
 footer p {
@@ -392,6 +366,7 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
+
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -404,11 +379,11 @@ body {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18bc9c;
-  background: white;
+  color: #F80000;
+  background: #ffb833;
   border: solid 2px white;
 }
-.btn-social {
+.btn-social-footer {
   display: inline-block;
   height: 50px;
   width: 50px;

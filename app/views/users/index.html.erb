@@ -1,35 +1,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   
   <!-- Navigation -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-          <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">NYMVIC</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#nymvic">Join us</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#v-registration">Voter Registration</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-  </nav>
+  <%= render 'navbar' %>
   
   <!-- Intro Header -->
   <header class="intro">
@@ -51,7 +23,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h2>New York Muslim Voter and Information Club</h2>
-        <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count. <%= link_to "Click Here", "/pages/about", style: 'font-weight: bold;' %> to learn more.</p>
+        <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count. <%= link_to "Click Here", "/pages/about", style: 'font-size: 22px; font-weight: bold;' %> to learn more.</p>
         <p>There are hundreds of thousands of US Muslim citizens in NYC alone, and approximately one million Muslims in NY representing a variety of heritages and languages whose voice has gone mostly unheard in NY politics.</p>
         <h3> We are here to bridge that gap. </h3>
       </div>
@@ -77,7 +49,7 @@
 
   <!-- Voter Section -->
   <section id= "v-registration" class="content-section text-center">
-    <div class="download-section">
+    <div class="voter-section">
       <div class="container">
         <div class='row'>
           <div class="col-xs-12">
@@ -95,42 +67,14 @@
       </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="container content-section text-center">
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Contact NYMVIC</h2>
-        <p>Feel free to email us to provide some feedback, give us suggestions, or to just say hello!</p>
-        <p><a href="mailto:nymvic@gmail.com" style= 'color:#19804D; font-size: 30px; font-weight: bold;'>nymvic@gmail.com</a></p>
-      </div>
-    </div>
-  </section>
-  
-  <footer>
-    <div class="container-fluid text-center">
-      <div class='row'>
-        <div class='col-sm-4'>
-          <%= link_to "About Us", "/pages/about", style: 'font-weight: bold; font-size: 20px;' %><br>
-          <%= link_to "Volunteer", "/pages/volunteer", style: 'font-weight: bold; font-size: 20px;' %>
-        </div>
-        <div class='col-sm-4'>
-          <p>Copyright &copy; NYMVIC 2016</p>
-        </div>
-        <div class='col-sm-4'>
-          <p> Follow Us</p>
-          <ul class="list-inline">
-            <li>
-              <a href="https://twitter.com/nymvic" class="btn-social btn-outline"><i class="fa fa-twitter fa-fw"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/NYMVIC/info?tab=page_info" class="btn-social btn-outline"><i class="fa fa-facebook fa-fw"></i></a>
-            </li>
-          </ul>  
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Volunteer -->
+  <section id ='volunteer' class= 'container content-section text-center'>
+    <h3>NYMVIC NEEDS VOLUNTEERS!</h3>
+    <%= image_tag "volunteer.jpg", size: '500x500', :class=> "img-responsive center-block" %><br><br>
+    <p>Take a More Active Role In Your Community And Get Involved With NYMVIC To Empower Your Community.Want To Volunteer? Please <%= link_to "Click Here", "/pages/contactus", style: 'font-size: 22px; font-weight: bold;' %> and drop us a line.</p> 
+  </section><br>
+  <!-- Footer -->
+  <%= render 'footer' %>
   
   <!--Modal-1 -->
   <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
