@@ -139,21 +139,25 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #000;
-    background: url(vote.png) no-repeat bottom center scroll;
+    background: url(vote.png) no-repeat top left scroll;
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    /* WebKit */
+    -webkit-background-size: 100% 65%;
+    /* Firefox */
+    -moz-background-size: 100% 65%;
+    /* Opera, later Google Chrome */
+    background-size: 100% 65%;
+    -o-background-size: 100% 65%;
 }
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    color: #fff;
 }
 
 .intro .intro-body .intro-text {
@@ -167,7 +171,8 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 60px;
+        color: #fff;
     }
 
     .intro .intro-body .intro-text {

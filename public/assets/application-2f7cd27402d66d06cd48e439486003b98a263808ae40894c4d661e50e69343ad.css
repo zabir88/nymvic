@@ -8792,18 +8792,18 @@ button.close {
   }
 }
 /* line 5, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 body {
   width: 100%;
   height: 100%;
   font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #000;
   background-color: #fff;
-}
-
-/* line 13, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-html {
-  width: 100%;
-  height: 100%;
 }
 
 /* line 18, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
@@ -8823,7 +8823,7 @@ h6 {
 /* line 31, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -8831,13 +8831,13 @@ p {
   /* line 38, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   p {
     margin: 0 0 35px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
   }
 }
 /* line 45, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 a {
-  color: #19804D;
+  color: #F80000;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -8847,15 +8847,10 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #ffb833;
 }
 
 /* line 58, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.light {
-  font-weight: 400;
-}
-
-/* line 62, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -8864,75 +8859,72 @@ a:focus {
   background-color: #000;
 }
 
-/* line 70, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 66, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .navbar-brand {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 40px;
 }
 
-/* line 74, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 71, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .navbar-brand:focus {
   outline: 0;
 }
 
-/* line 78, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 75, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #fff;
+  color: #F80000;
 }
 
-/* line 84, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 81, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
   outline: 0;
 }
 
-/* line 89, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 86, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom a {
-  color: #fff;
+  color: #F80000;
 }
 
-/* line 93, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 90, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .nav li a {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
 }
 
-/* line 99, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 96, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .nav li a:hover {
   outline: 0;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: transparent;
+  color: #ffb833;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 105, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 102, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
   outline: 0;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 111, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 108, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .nav li.active {
   outline: 0;
 }
 
-/* line 115, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* line 119, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 112, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .nav li.active a:hover {
-  color: #fff;
+  color: #F80000;
 }
 
 @media (min-width: 768px) {
-  /* line 124, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 117, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .navbar-custom {
     padding: 20px 0;
     border-bottom: 0;
+    font-size: 16px;
     letter-spacing: 1px;
     background: #000;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -8940,69 +8932,68 @@ a:focus {
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
-  /* line 134, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 128, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .navbar-custom.top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: #000;
   }
 }
-/* line 141, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 135, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .intro {
   display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: #fff;
-  background: url(main.jpg) no-repeat bottom center scroll;
+  color: #000;
+  background: url(vote.png) no-repeat top left scroll;
   background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  /* WebKit */
+  -webkit-background-size: 100% 65%;
+  /* Firefox */
+  -moz-background-size: 100% 65%;
+  /* Opera, later Google Chrome */
+  background-size: 100% 65%;
+  -o-background-size: 100% 65%;
 }
 
-/* line 156, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 153, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .intro .intro-body {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
-/* line 161, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 158, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .intro .intro-body .brand-heading {
-  font-size: 60px;
-  color: #000;
+  font-size: 40px;
+  color: #fff;
 }
 
-/* line 166, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 163, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .intro .intro-body .intro-text {
-  font-size: 30px;
-  font-weight: 600;
-  color: #00b300;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {
-  /* line 173, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 168, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .intro {
     height: 100%;
     padding: 0;
   }
 
-  /* line 178, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 173, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .intro .intro-body .brand-heading {
-    font-size: 100px;
-    color: #000;
+    font-size: 60px;
+    color: #fff;
   }
 
-  /* line 183, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 178, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .intro .intro-body .intro-text {
-    font-size: 40px;
-    font-weight: 600;
-    color: #00b300;
+    font-size: 26px;
   }
 }
-/* line 191, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 183, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -9011,22 +9002,22 @@ a:focus {
   border: 2px solid #fff;
   border-radius: 100% !important;
   font-size: 40px;
-  color: #000;
-  background: #fff;
+  color: #fff;
+  background: 0 0;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
 }
 
-/* line 206, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 198, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-circle:hover,
 .btn-circle:focus {
   outline: 0;
-  color: #000;
-  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 213, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 205, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
@@ -9034,7 +9025,7 @@ a:focus {
   -moz-transition-duration: 1s;
 }
 
-/* line 220, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 212, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -9074,157 +9065,141 @@ a:focus {
     transform: scale(1);
   }
 }
-/* line 265, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 257, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .content-section {
   padding-top: 100px;
 }
 
-/* line 269, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.download-section {
+/* line 261, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.voter-section {
   width: 100%;
   padding: 50px 0;
-  color: #000;
-  background: url(vote.png) no-repeat center center scroll;
+  color: #fff;
+  background: url() no-repeat center center scroll;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 
-/* line 280, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-#volunteer {
+/* line 273, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+#contact {
   width: 100%;
-  height: 200px;
-  margin-top: 50px;
+  height: 100%;
+  margin-top: 100px;
 }
 
 @media (min-width: 767px) {
-  /* line 287, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 280, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .content-section {
-    padding-top: 250px;
+    padding-top: 200px;
   }
 
-  /* line 291, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-  .download-section {
+  /* line 284, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  .voter-section {
     padding: 100px 0;
   }
 
-  /* line 295, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-  #volunteer {
-    height: 400px;
-    margin-top: 250px;
+  /* line 288, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  #contact {
+    height: 100%;
+    margin-top: 200px;
   }
 }
-/* line 301, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 294, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn {
   border-radius: 2;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-/* line 311, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 304, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-default {
-  border: 2px solid #19804D;
+  border: 1px solid #F80000;
   color: #fff;
-  background-color: #19804D;
+  background-color: #F80000;
 }
 
-/* line 317, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 310, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-default:hover,
 .btn-default:focus {
-  border: 2px solid #19804D;
-  outline: 2;
-  color: #19804D;
+  border: 1px solid #F80000;
+  outline: 0;
+  color: #F80000;
   background-color: #fff;
 }
 
-/* line 324, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.btn-register {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #fff;
-}
-
-/* line 329, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.btn-register:hover,
-.btn-register:focus {
-  border: 2px solid #000;
-  outline: 2;
-  color: #fff;
-  background-color: #000;
-}
-
-/* line 337, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 318, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 ul.banner-social-buttons {
   margin-top: 0;
 }
 
 @media (max-width: 1199px) {
-  /* line 343, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 323, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 349, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 329, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
 
-  /* line 355, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+  /* line 335, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
-/* line 360, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 340, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 footer {
   padding: 50px 0;
   color: #fff;
   background-color: #000;
-  width: 100%;
 }
 
-/* line 367, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 346, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 footer p {
   margin: 0;
 }
 
-/* line 371, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 350, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 377, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 356, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 383, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 362, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 img::selection {
   background: 0 0;
 }
 
-/* line 387, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 366, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 img::-moz-selection {
   background: 0 0;
 }
 
-/* line 391, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 370, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 395, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 375, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -9234,18 +9209,18 @@ body {
   margin-top: 15px;
 }
 
-/* line 403, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 383, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18bc9c;
-  background: white;
+  color: #F80000;
+  background: #ffb833;
   border: solid 2px white;
 }
 
-/* line 411, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.btn-social {
+/* line 391, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.btn-social-footer {
   display: inline-block;
   height: 50px;
   width: 50px;
