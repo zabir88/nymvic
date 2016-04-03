@@ -18,7 +18,6 @@
 //= require jquery.easing
 //= require_tree .
 
-
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
@@ -41,7 +40,6 @@ $(function() {
         event.preventDefault();
     });
 });
-
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
