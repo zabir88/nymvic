@@ -113,7 +113,7 @@ a:focus {
     color: #F80000;
 }
 
-@media(min-width:1000px) {
+@media(min-width:1068px) {
     .navbar-custom {
         padding: 12px 0;
         border-bottom: 0;
@@ -269,7 +269,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 180px;
+        padding-top: 250px;
     }
 
     .voter-section {
@@ -397,9 +397,11 @@ body {
     width:100%; 
     margin:0 auto; /* center your carousel if other than 100% */ 
 }
+
 .well{
     background-color: rgba(255, 0, 0, .1);
-    padding-bottom: 60px; 
+    padding: 60px 20px 60px 20px;
+    
 }
 
 /* carousel modification ends */
