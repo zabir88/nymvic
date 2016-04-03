@@ -136,7 +136,7 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: center;
     background: url(vote.png) no-repeat top left scroll;
     background-color: orange;
@@ -150,13 +150,13 @@ a:focus {
 }
 
 .intro .intro-body {
+    display: table-cell;
     vertical-align: middle;
 }
 
 .intro .intro-body .brand-heading {
+    font-size: 25px;
     margin-top: 700px;
-    font-size: 23px;
-    color: #000;
 }
 
 @media(min-width:768px) {
@@ -168,7 +168,6 @@ a:focus {
     .intro .intro-body .brand-heading {
         font-size: 40px;
         margin-top: 750px;
-        color: #000;
     }
 }
 
