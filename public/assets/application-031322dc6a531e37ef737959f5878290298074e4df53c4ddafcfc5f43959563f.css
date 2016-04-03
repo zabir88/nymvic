@@ -9061,7 +9061,7 @@ a:focus {
 /* line 251, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .voter-section {
   width: 100%;
-  padding: 20px 0;
+  padding: 15px 0 15px;
   color: #fff;
   background: url("capitol.jpg") no-repeat center center scroll;
   background-color: #fff;
@@ -9086,7 +9086,7 @@ a:focus {
 
   /* line 275, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .voter-section {
-    padding: 20px 0;
+    padding: 90px 0 90px;
   }
 
   /* line 279, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
