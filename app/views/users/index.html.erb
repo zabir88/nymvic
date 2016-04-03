@@ -67,7 +67,45 @@
     </div>
   </section>
 
+  <!-- Latest News -->
+  <section id= "latest-news" class="content-section text-center">
+    <div class='container'>
+      <div class="row">
+        <h3>Our Latest News</h3>
+        <div class="col-sm-12">
+          <div id="carousel-example-generic" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators hidden-sm">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner slider-size">
+              <div class="item active">
+                <%= image_tag "slide1.jpg", :class=> "img-responsive center-block" %>
+              </div>
+              <div class="item">
+                <%= image_tag "slide2.jpg", :class=> "img-responsive center-block" %>
+              </div>
+              <div class="item">
+                <%= image_tag "slide3.jpg", :class=> "img-responsive center-block" %>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="icon-prev" style="color: #000;"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="icon-next" style="color: #000;"></span>
+            </a>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Volunteer -->
   <section id ='volunteer' class= 'container content-section text-center'>
