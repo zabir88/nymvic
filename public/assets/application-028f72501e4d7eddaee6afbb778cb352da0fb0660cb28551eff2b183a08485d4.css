@@ -8919,12 +8919,12 @@ a:focus {
   color: #F80000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   /* line 117, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .navbar-custom {
-    padding: 15px 0;
+    padding: 12px 0;
     border-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     background: #000;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
