@@ -8862,7 +8862,7 @@ a:focus {
 /* line 66, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .navbar-custom .navbar-brand {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 /* line 71, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
@@ -8919,7 +8919,7 @@ a:focus {
   color: #F80000;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1068px) {
   /* line 117, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .navbar-custom {
     padding: 12px 0;
@@ -9081,7 +9081,7 @@ a:focus {
 @media (min-width: 767px) {
   /* line 271, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .content-section {
-    padding-top: 180px;
+    padding-top: 250px;
   }
 
   /* line 275, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
@@ -9233,6 +9233,12 @@ body {
   width: 100%;
   margin: 0 auto;
   /* center your carousel if other than 100% */
+}
+
+/* line 401, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.well {
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 60px 20px 60px 20px;
 }
 
 /* carousel modification ends */
