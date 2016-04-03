@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'gibbon', '~> 2.2', '>= 2.2.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-easing-rails', '~> 0.0.2'
+gem 'jquery-turbolinks', '~> 2.1'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 #########################################
 group :development, :test do
