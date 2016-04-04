@@ -26,17 +26,17 @@
       </div>
     </div><br><br>
     <div class='row'>
-      <div class='col-sm-4 well-buttons'>
+      <div class='col-sm-4 well well-buttons'>
         <h4>Become a member.</h4>
         <%= link_to "#modal-1", :class => "btn btn-default btn-lg ", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%> 
         <span>Join us its free!</span><br><br><%= image_tag 'join_icon.png', size: '200x150', class: "image-responsive" %><% end %>
       </div>  
-      <div class='col-sm-4 well-buttons'>
+      <div class='col-sm-4 well well-buttons'>
         <h4>Tell your friends.</h4>
         <%= link_to "#modal-2", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do %>
         <span>Spread the word!</span><br><br><%= image_tag ('chat_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
       </div>
-      <div class='col-sm-4 well-buttons'>
+      <div class='col-sm-4 well well-buttons'>
         <h4>Support us.</h4>
         <%= link_to "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%>
         <span>Donate Us!</span><br><br><%= image_tag ('donate_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
@@ -66,36 +66,44 @@
   <!-- Latest News -->
   <section id= "latest-news" class="content-section text-center">
     <h3>Our Latest News</h3><br>
-    <div class='container-fluid'>
+    <div class='container'>
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-12">
           <div id="carousel-example-generic" class="carousel slide">
             <!-- Indicators -->
             <ol class="carousel-indicators hidden-sm">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner slider-size">
               <div class="item active">
-                <%= image_tag "slide1.jpg", :class=> "img-responsive center-block" %>
+                <%= image_tag "slide1.png", width: "100%", :lass=> "img-responsive" %>
               </div>
               <div class="item">
-                <%= image_tag "slide2.jpg", :class=> "img-responsive center-block" %>
+                <%= image_tag "slide2.png", width: "100%", :class=> "img-responsive img-full" %>
               </div>
               <div class="item">
-                <%= image_tag "slide3.jpg", :class=> "img-responsive center-block" %>
+                <%= image_tag "slide3.png", width: "100%", :class=> "img-responsive" %>
+              </div>
+              <div class="item">
+                <%= image_tag "slide4.png", width: "100%", :class=> "img-responsive" %>
+              </div>
+              <div class="item">
+                <%= image_tag "slide5.png", width: "100%", :class=> "img-responsive" %>
               </div>
             </div>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="icon-prev" style="color: #000;"></span>
+              <span class="icon-prev"></span>
             </a>
             <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="icon-next" style="color: #000;"></span>
+              <span class="icon-next"></span>
             </a>
           </div>    
         </div>
@@ -106,7 +114,7 @@
   <!-- Volunteer -->
   <section id ='volunteer' class= 'container content-section text-center'>
     <h3>NYMVIC NEEDS VOLUNTEERS!</h3>
-    <%= image_tag "volunteer.jpg", size: '500x500', :class=> "img-responsive center-block" %><br><br><br>
+    <%= image_tag "volunteer.png", size: '500x500', :class=> "img-responsive center-block" %><br><br><br>
     <p>Take a More Active Role In Your Community And Get Involved With NYMVIC To Empower Your Community.Want To Volunteer? Please <%= link_to "Click Here", "/pages/contactus", style: 'font-size: 22px; font-weight: bold;' %> and drop us a line.</p> 
   </section><br><br><br><br>
 
