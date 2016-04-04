@@ -10,10 +10,11 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        format.js {render :index}
       else
         format.html { render :index }
         format.json { render json: @user.errors, status: :unprocessable_entity }
+        format.js {render json: @user.errors, status: :unprocessable_entity}
       end
     end
   end

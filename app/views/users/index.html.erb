@@ -53,7 +53,7 @@
             <h3>Voting is free, it's power, and your duty as a citizen.</h3><br>
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv300x100v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="http://vr.rockthevote.com/images/widget/rtv-300x100-v2.gif" />
-              <br><br><br><br> <!-- for this block to appear only hence using br -->
+              <br><br><br><!-- for this block to appear only hence using br -->
               <button class= 'btn btn-default btn-lg btn-register'>click to register </button>
             </a>
             <%= javascript_include_tag "https://s3.amazonaws.com/ovr/widget_loader.js" %>
@@ -120,11 +120,11 @@
         <!--Modal Header-->
         <div class='modal-header'>
           <button type='button' class='close' data-dismiss='modal' aria-hidden= 'true'>x</button>
-          <h2 class='modal-title text-center'> You made the right choice!</h2>
+          <h2 class='modal-title text-center' id='myModalLabel'> You made the right choice!</h2>
         </div> <br> 
         <!--Modal Body-->
         <div class="modal-body text-center">
-         <%= render "form" %> 
+          <%= render 'form', modal:true  %>
         </div>
       </div>  
     </div>
