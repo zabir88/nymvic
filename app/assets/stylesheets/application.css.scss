@@ -391,24 +391,16 @@ body {
 
 /* carousel modification begin */
 .slider-size {
-    height: 300px; /* This is your slider height */
+    height: 350px; /* This is your slider height */
 }
 .carousel-inner {
-    width:100%; 
+    width: 100%;
     margin:0 auto; /* center your carousel if other than 100% */ 
 }
 
-
 .well-buttons{
-    background-color: rgba(255, 0, 0, .3);
-    padding: 15px 0 15px 0;
-}
-
-@media(min-width:1068px){
-    .well-buttons{
-        background-color: rgba(255, 0, 0, .3);
-        padding: 50px 20px 50px 20px;
-    }
+    background-color: rgba(255, 0, 0, .2);
+    padding: 20px 0 20px 0;
 }
 
 /* carousel modification ends */
