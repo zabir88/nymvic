@@ -47,14 +47,14 @@
   <!-- Voter Section -->
   <section id= "v-registration" class="content-section text-center">
     <div class="voter-section">
-      <div class="container-fluid">
+      <div class="container">
         <div class='row'>
           <div class="col-sm-8 col-sm-offset-2">
             <h3>Voting is free, it's power, and your duty as a citizen.</h3><br>
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv300x100v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="http://vr.rockthevote.com/images/widget/rtv-300x100-v2.gif" />
-              <br><br><br><br>
-              <button class= 'btn btn-default btn-lg btn-register'>click to be a registered voter </button>
+              <br><br><br><br> <!-- for this block to appear only hence using br -->
+              <button class= 'btn btn-default btn-lg btn-register'>click to register </button>
             </a>
             <%= javascript_include_tag "https://s3.amazonaws.com/ovr/widget_loader.js" %>
           </div>
@@ -66,7 +66,7 @@
   <!-- Latest News -->
   <section id= "latest-news" class="content-section text-center">
     <h3>Our Latest News</h3><br>
-    <div class='container'>
+    <div class='container-fluid'>
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
           <div id="carousel-example-generic" class="carousel slide">
@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-  </section><br>
+  </section>
 
   <!-- Volunteer -->
   <section id ='volunteer' class= 'container content-section text-center'>
