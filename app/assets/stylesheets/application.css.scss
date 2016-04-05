@@ -141,12 +141,12 @@ a:focus {
     background: url(vote.png) no-repeat top left scroll;
     background-color: orange;
     /* WebKit */
-    -webkit-background-size: 100% 75%;
+    -webkit-background-size: 75% 100%;
     /* Firefox */
-    -moz-background-size: 100% 75%;
+    -moz-background-size: 75% 100%;
     /* Opera, later Google Chrome */
-    background-size: 100% 75%;
-    -o-background-size: 100% 75%;
+    background-size: 75% 100%;
+    -o-background-size: 75% 100%;
 }
 
 .intro .intro-body {
@@ -155,19 +155,17 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 25px;
-    margin-top: 700px;
-}
+    font-size: 20px;
+} 
 
-@media(min-width:768px) {
+@media(min-width:1086px) {
     .intro {
         height: 100%;
         padding: 0;
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 40px;
-        margin-top: 750px;
+        font-size: 35px;
     }
 }
 
@@ -268,7 +266,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 225px;
     }
 
     .voter-section {

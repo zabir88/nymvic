@@ -4,12 +4,13 @@
   <!-- Intro Header -->
   <header class="intro">
     <div class="intro-body">
-      <div class="container">
-        <div class="row">
-          <h1 class="brand-heading">Click below to Be a part of a positive change</h1>
+      <div class="container-fluid">
+        <div class="row" style= "margin-left: 75%;">
+           <h1 class="brand-heading">Click below to Be a part of a positive change</h1>
           <a href="#nymvic" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
           </a>
+         ;
         </div>
       </div>
     </div>
@@ -29,17 +30,17 @@
       <div class='col-sm-4 well well-buttons'>
         <h4>Become a member.</h4>
         <%= link_to "#modal-1", :class => "btn btn-default btn-lg ", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%> 
-        <span>Join us its free!</span><br><br><%= image_tag 'join_icon.png', size: '200x150', class: "image-responsive" %><% end %>
+        <span>Join us its free!</span><br><%= image_tag 'join_icon.png', size: '200x150', class: "image-responsive" %><% end %>
       </div>  
       <div class='col-sm-4 well well-buttons'>
         <h4>Tell your friends.</h4>
         <%= link_to "#modal-2", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do %>
-        <span>Spread the word!</span><br><br><%= image_tag ('chat_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
+        <span>Spread the word!</span><br><%= image_tag ('chat_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
       </div>
       <div class='col-sm-4 well well-buttons'>
         <h4>Support us.</h4>
         <%= link_to "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%>
-        <span>Donate Us!</span><br><br><%= image_tag ('donate_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
+        <span>Donate Us!</span><br><%= image_tag ('donate_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
       </div>
     </div>
   </section>
@@ -53,7 +54,7 @@
             <h3>Voting is free, it's power, and your duty as a citizen.</h3><br>
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv300x100v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="http://vr.rockthevote.com/images/widget/rtv-300x100-v2.gif" />
-              <br><br><br><!-- for this block to appear only hence using br -->
+              <br><br><br><br><!-- for this block to appear only hence using br -->
               <button class= 'btn btn-default btn-lg btn-register'>click to register </button>
             </a>
             <%= javascript_include_tag "https://s3.amazonaws.com/ovr/widget_loader.js" %>
@@ -61,14 +62,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><br>
 
   <!-- Latest News -->
   <section id= "latest-news" class="content-section text-center">
-    <h3>Our Latest News</h3><br>
+    <h3>Our Latest News</h3>
     <div class='container'>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-lg-12">
           <div id="carousel-example-generic" class="carousel slide">
             <!-- Indicators -->
             <ol class="carousel-indicators hidden-sm">
@@ -82,7 +83,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner slider-size">
               <div class="item active">
-                <%= image_tag "slide1.png", width: "100%", :lass=> "img-responsive" %>
+                <%= image_tag "slide1.png", width: "100%", :class=> "img-responsive" %>
               </div>
               <div class="item">
                 <%= image_tag "slide2.png", width: "100%", :class=> "img-responsive img-full" %>
