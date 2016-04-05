@@ -11,11 +11,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 ########ADDED BY ADMIN###################
-gem 'gibbon', '~> 2.2', '>= 2.2.1'
+gem 'gibbon', '~> 2.2', '>= 2.2.1' #Mailchimp API
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-easing-rails', '~> 0.0.2'
 gem 'jquery-turbolinks', '~> 2.1'
-gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'figaro', '~> 1.1', '>= 1.1.1' # To store confedential infos
 #########################################
 group :development, :test do
   gem 'byebug'
