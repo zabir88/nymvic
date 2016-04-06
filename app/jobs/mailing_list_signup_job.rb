@@ -19,7 +19,7 @@ class MailingListSignupJob < ActiveJob::Base
           MSTAT: user.marital_status,
           CHILDREN: user.children,
           PARTY: user.party_affliation,
-          TELPHONE: user.telephone
+          PHONE: user.telephone
         }
     })
     Rails.logger.info("Subscribed #{user.email} to MailChimp") if result
