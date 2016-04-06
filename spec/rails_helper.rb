@@ -5,7 +5,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
-require 'sucker_punch/testing/inline'
+
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -33,7 +33,6 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
-  config.active_job.queue_adapter = :inline #for sucker_punch gem
   config.include FactoryGirl::Syntax::Methods
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)

@@ -387,8 +387,9 @@ body {
 }
 
 /* carousel modification begin */
-.slider-size {
-    height:auto;
+.carousel {
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
 }
 /* carousel modification ends */
 

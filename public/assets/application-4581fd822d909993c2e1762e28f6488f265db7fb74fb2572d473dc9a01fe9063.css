@@ -9220,12 +9220,13 @@ body {
 
 /* carousel modification begin */
 /* line 390, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
-.slider-size {
-  height: auto;
+.carousel {
+  border-radius: 50px 50px 50px 50px;
+  overflow: hidden;
 }
 
 /* carousel modification ends */
-/* line 395, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 396, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .well-buttons {
   background-color: rgba(255, 0, 0, 0.2);
   padding: 20px 0 20px 0;

@@ -16,7 +16,6 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-easing-rails', '~> 0.0.2'
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1' # To store confedential infos
-gem 'sucker_punch', '~> 2.0', '>= 2.0.1' # For Background work such as mailing list signup
 #########################################
 group :development, :test do
   gem 'byebug'

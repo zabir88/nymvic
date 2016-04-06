@@ -15068,6 +15068,6 @@ $(document).ready(function(){
 //Carousel control speed change from default 5 secs to 3 secs
 $(document).ready(function() {
     $('.carousel').carousel({
-      interval: 3000
+      interval: 3500
     })
   });
