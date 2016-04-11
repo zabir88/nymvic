@@ -5,8 +5,9 @@
   <header class="intro">
     <div class="intro-body">
       <div class="container-fluid">
-        <div class="row" style= "margin-left: 75%;">
-           <h1 class="brand-heading">Click below to Be a part of a positive change</h1>
+        <div class="row" style= "margin-left: 77%;">
+           <h1 class="brand-heading">Be a part of positive change</h1>
+           <h1 class='brand-heading'>Click below</h1>
           <a href="#nymvic" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
           </a>
@@ -19,27 +20,27 @@
   <section id="nymvic" class="container content-section text-center">
     <div class="row">
       <div class="col-sm-12">
-        <h2>New York Muslim Voter and Information Club</h2>
+        <h2 style='color:#b30000;'>New York Muslim Voter and Information Club</h2>
         <p>New York Muslim Voter and Information Club (NYMVIC) helps qualified US citizens register to vote and provides education for Muslims in NY on the political process and how to make their vote count. <%= link_to "Click Here", "/pages/about", style: 'font-size: 22px; font-weight: bold;' %> to learn more.</p>
         <p>There are hundreds of thousands of US Muslim citizens in NYC alone, and approximately one million Muslims in NY representing a variety of heritages and languages whose voice has gone mostly unheard in NY politics.</p>
-        <h3> We are here to bridge that gap. </h3>
+        <h3 style= "font-family: 'Inknut Antiqua', serif;"> We are here to bridge that gap. </h3>
       </div>
     </div><br><br>
     <div class='row'>
       <div class='col-sm-4 well well-buttons'>
         <h4>Become a member.</h4>
         <%= link_to "#modal-1", :class => "btn btn-default btn-lg ", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%> 
-        <span>Join us its free!</span><br><%= image_tag 'join_icon.png', size: '200x150', class: "image-responsive" %><% end %>
+        <span>Join us its free!</span><br><%= image_tag 'join_icon.png', size: '200x175', class: "image-responsive" %><% end %>
       </div>  
       <div class='col-sm-4 well well-buttons'>
         <h4>Tell your friends.</h4>
         <%= link_to "#modal-2", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do %>
-        <span>Spread the word!</span><br><%= image_tag ('chat_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
+        <span>Spread the word!</span><br><%= image_tag 'chat_icon.png', size: '200x175', class: "image-responsive" %><% end %>
       </div>
       <div class='col-sm-4 well well-buttons'>
         <h4>Support us.</h4>
         <%= link_to "#modal-3", :class => "btn btn-default btn-lg", "data-toggle" => "modal", "data-backdrop" => "static", "data-keyboard" => "false" do%>
-        <span>Donate Us!</span><br><%= image_tag ('donate_icon.png'), size: '200x150', class: "image-responsive" %><% end %>
+        <span>Donate Us!</span><br><%= image_tag 'donate_icon.png', size: '200x175', class: "image-responsive" %><% end %>
       </div>
     </div>
   </section>
@@ -50,7 +51,7 @@
       <div class="container">
         <div class='row'>
           <div class="col-sm-8 col-sm-offset-2">
-            <h3>Voting is free, it's power, and your duty as a citizen.</h3><br>
+            <h2>Voting is free, it's power, and your duty as a citizen.</h2><br>
             <a href="https://register.rockthevote.com/?partner=33321&source=embed-rtv300x100v2" class="floatbox" data-fb-options="width:618 height:max scrolling:yes">
               <img src="//vr.rockthevote.com/images/widget/rtv-300x100-v2.gif" />
               <br><br><br><br><!-- for this block to appear only hence using br -->
@@ -65,7 +66,7 @@
 
   <!-- Latest News -->
   <section id= "latest-news" class="content-section text-center">
-    <h3>Our Latest News</h3>
+    <h2 style='color:#b30000;'>Our Latest News</h2>
     <div class='container'>
       <div class="row">
         <div class="col-sm-12">
@@ -113,9 +114,9 @@
 
   <!-- Volunteer -->
   <section id ='volunteer' class= 'container content-section text-center'>
-    <h3>NYMVIC NEEDS VOLUNTEERS!</h3>
+    <h2 style='color:#b30000;'>NYMVIC NEEDS VOLUNTEERS!</h2>
     <%= image_tag "volunteer.png", size: '500x500', :class=> "img-responsive center-block" %><br><br><br>
-    <p>Take a More Active Role In Your Community And Get Involved With NYMVIC To Empower Your Community.Want To Volunteer? Please <%= link_to "Click Here", "/pages/contactus", style: 'font-size: 22px; font-weight: bold;' %> and drop us a line.</p> 
+    <p>Take a More Active Role In Your Community And Get Involved With NYMVIC To Empower Your Community. Want To Volunteer? Please <%= link_to "Click Here", "/pages/contactus", style: 'font-size: 22px; font-weight: bold;' %> and drop us a line.</p> 
   </section><br><br><br><br>
 
   <!-- Footer -->

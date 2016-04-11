@@ -139,7 +139,7 @@ a:focus {
     padding: 60px 0;
     text-align: center;
     background: url(vote.jpg) no-repeat top left scroll;
-    background-color: orange;
+    background-color: #ff811a;
     /* WebKit */
     -webkit-background-size: 75% 100%;
     /* Firefox */
@@ -394,6 +394,7 @@ body {
 /* carousel modification ends */
 
 .well-buttons{
-    background-color: rgba(255, 0, 0, .2);
+    background-color: transparent;
+    border-color: transparent;
     padding: 20px 0 20px 0;
 }
