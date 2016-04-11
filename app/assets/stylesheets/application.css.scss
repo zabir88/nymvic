@@ -249,10 +249,8 @@ a:focus {
 .voter-section {
     width: 100%;
     padding: 15px 0 15px;
-    
     color: #fff;
     background: url('capitol.png') no-repeat center center scroll;
-    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -398,3 +396,5 @@ body {
     border-color: transparent;
     padding: 20px 0 20px 0;
 }
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
