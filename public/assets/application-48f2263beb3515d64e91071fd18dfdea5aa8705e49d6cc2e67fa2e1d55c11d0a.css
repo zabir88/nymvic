@@ -9232,12 +9232,39 @@ body {
   padding: 20px 0 20px 0;
 }
 
-/* line 399, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* button size grow animation */
+/* line 400, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .grow {
   transition: all .2s ease-in-out;
 }
 
-/* line 400, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+/* line 403, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .grow:hover {
   transform: scale(1.1);
 }
+
+/* end */
+/* modal postion centered */
+/* line 409, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+/* line 414, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+/* line 422, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* end */
