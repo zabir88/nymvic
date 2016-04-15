@@ -1,9 +1,6 @@
 class MailingListSignupJob < ActiveJob::Base
-	def perform(user)
-    logger.info "signing up #{user.email}"
-    subscribe(user)
-  end
-
+  queue_as :default
+  	
   def subscribe(user)
     mailchimp = Gibbon::Request.new(api_key: ENV["mailchimp_api_key"])
     list_id =ENV["mailchimp_list_id"]
@@ -23,5 +20,10 @@ class MailingListSignupJob < ActiveJob::Base
         }
     })
     Rails.logger.info("Subscribed #{user.email} to MailChimp") if result
+  end
+
+  def perform(user)
+    logger.info "signing up #{user.email}"
+    subscribe(user)
   end
 end
