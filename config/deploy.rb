@@ -25,11 +25,7 @@ set :puma_workers, 0
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_preload_app, false
-require 'delayed/recipes'
-set :delayed_job_command, "bin/delayed_job"
-after "deploy:start", "delayed_job:start"
-after "deploy:stop", "delayed_job:stop"
-after "deploy:restart", "delayed_job:stop","delayed_job:start"
+set :linked_dirs, %w{tmp/pids}
 
 namespace :deploy do
 
