@@ -1,5 +1,5 @@
 class SignupMailingListJob < ActiveJob::Base
-  queue_as :default
+  queue_as :mailinglist
 
   def subscribe(user)
     mailchimp = Gibbon::Request.new(api_key: ENV["mailchimp_api_key"])
