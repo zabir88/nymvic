@@ -10,14 +10,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 ########ADDED BY ADMIN###################
-gem 'gibbon', '~> 2.2', '>= 2.2.1' #Mailchimp API
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1' #Twilio API
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-easing-rails', '~> 0.0.2'
 gem 'jquery-turbolinks', '~> 2.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1' # To store confedential infos
 gem 'delayed_job_active_record', '~> 4.1' #for queueing background jobs
-gem 'daemons', '~> 1.2', '>= 1.2.3'
+gem 'daemons', '~> 1.2', '>= 1.2.3'# for queueing background jobs
 #########################################
 group :development, :test do
   gem 'byebug'
