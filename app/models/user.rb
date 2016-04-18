@@ -3,9 +3,4 @@ class User < ActiveRecord::Base
 	validates :birth_year, numericality: {only_integer: true, message: "enter numbers only"}, length: {is: 4, message: 'should be 4 characters'}
 	validates :telephone, numericality: {only_integer: true, message: "enter numbers only"}, length: {is: 10, message: 'should be 10 characters'} 
 	validates :email, format: { with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i, message: "enter a valid email" }, uniqueness: {message: "email has already been taken"} 
-	after_create :signup_email
-	
-	def signup_email
-		SignUpEmailJob.perform_later(self)
-	end
 end
