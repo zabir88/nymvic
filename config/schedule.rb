@@ -19,3 +19,7 @@ set :output, {:error=> "log/cron_error_log.log", :standard=> 'log/cron_log.log'}
 every 1.day, :at=> '7:20 am' do
 	runner "SendSmsJob.perform_later"
 end
+
+every 1.day, :at=> '12:10 pm' do
+	runner "SendEmailJob.perform_later"
+end

@@ -6,10 +6,9 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
     respond_to do |format|
       if @user.save
-        Welcomeuser.welcome_email(@user).deliver_later!(wait: 10.seconds)
+        EmailUsers.welcome_email(@user).deliver_later
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.js {render :index}
       else
