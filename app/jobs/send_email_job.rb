@@ -3,7 +3,7 @@ class SendEmailJob < ActiveJob::Base
 
   def perform
   	User.all.each do |u|
-    	EmailUsers.reminder_email(u)
+    	EmailUsers.reminder_email(u).deliver_now
   	end
   end
 end
