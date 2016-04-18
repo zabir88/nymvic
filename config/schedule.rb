@@ -16,6 +16,6 @@ set :output, {:error=> "log/cron_error_log.log", :standard=> 'log/cron_log.log'}
 #   runner "AnotherModel.prune_old_records"
 # end
 
-every 1.day, :at=> '7:27 pm' do
+every 1.day, :at=> '8:45 pm' do
 	runner "SendSmsJob.perform_later"
 end
