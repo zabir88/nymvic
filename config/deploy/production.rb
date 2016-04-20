@@ -31,7 +31,7 @@
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-server 'ec2-54-175-174-128.compute-1.amazonaws.com', user: 'deploy', roles: %w{web app db}
+server 'ec2-54-186-58-35.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}
 
 # Custom SSH Options
 # ==================
