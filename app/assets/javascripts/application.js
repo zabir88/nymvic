@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery.easing
+//= require turbolinks
 //= require_tree .
 
 // jQuery to collapse the navbar on scroll
@@ -31,7 +31,7 @@ $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll').on('click', function(event) {
+    $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -41,36 +41,56 @@ $(function() {
 });
 
 // Closes the Responsive Menu on Menu Item Click
-$(function(){
-    $('.navbar-collapse ul li a').click(function() {
-        if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
-            $('.navbar-toggle:visible').click();
-         }
-    });
+$('.navbar-collapse ul li a').click(function() {
+  if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
+    $('.navbar-toggle:visible').click();
+  }
 });
 
-// JQuery validation for modal
+//Carousel control speed change from default 5 secs to 3 secs
+$(function() {
+    $('.carousel').carousel({
+      interval: 3500
+    })
+});
+
 $(document).ready(function(){
+
   $(document).bind('ajaxError', 'form#new_user', function(event, jqxhr, settings, exception){
+
+    // note: jqxhr.responseJSON undefined, parsing responseText instead
     $(event.data).render_form_errors( $.parseJSON(jqxhr.responseText) );
+
   });
+
 });
 
 (function($) {
+
   $.fn.modal_success = function(){
+    // close modal
     this.modal('hide');
+
+    // clear form input elements
+    // todo/note: handle textarea, select, etc
     this.find('form input[type="text"]').val('');
+
+    // clear error state
     this.clear_previous_errors();
   };
 
   $.fn.render_form_errors = function(errors){
+
     $form = this;
     this.clear_previous_errors();
     model = this.data('model');
+
+    // show error messages in input form-group help-block
     $.each(errors, function(field, messages){
-      $input = $('input[name="' + model + '[' + field + ']"], select[name="' + model + '[' + field + ']"]');      
-      $input.closest('.form-group').addClass('has-error').find('.help-block').html( messages.join('<br>') );
+      $input = $('input[name="' + model + '[' + field + ']"], select[name="' + model + '[' + field + ']"]');
+      $input.closest('.form-group').addClass('has-error').find('.help-block').html( messages.join(' & ') );
     });
+
   };
 
   $.fn.clear_previous_errors = function(){
@@ -78,13 +98,6 @@ $(document).ready(function(){
       $('.help-block', $(this)).html('');
       $(this).removeClass('has-error');
     });
-  };
+  }
 
 }(jQuery));
-
-//Carousel control speed change from default 5 secs to 3 secs
-$(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 3500
-    })
-});
