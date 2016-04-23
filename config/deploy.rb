@@ -1,3 +1,4 @@
+lock '3.4.1'
 set :application, 'nymvic'
 set :repo_url, 'https://github.com/zabir88/nymvic.git' # Edit this to match your repository
 set :branch, :master
@@ -25,7 +26,6 @@ set :puma_init_active_record, true
 set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
-set :delayed_job_roles, [:app, :background]
 set :linked_dirs, %w(tmp/pids)
 ################################################
 namespace :deploy do
