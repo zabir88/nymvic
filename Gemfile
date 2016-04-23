@@ -17,6 +17,7 @@ gem 'jquery-turbolinks', '~> 2.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1' # To store confedential infos
 gem 'delayed_job_active_record', '~> 4.1' #for queueing background jobs
 gem 'daemons', '~> 1.2', '>= 1.2.3'# for queueing background jobs
+gem 'capistrano3-delayed-job', '~> 1.4'
 gem 'whenever', :require => false
 gem 'aws-ses', '~> 0.6.0', require: 'aws/ses' #For AWS SES mailer
 #########################################

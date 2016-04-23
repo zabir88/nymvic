@@ -25,6 +25,8 @@ set :puma_init_active_record, true
 set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+set :delayed_job_roles, [:app, :background]
+set :delayed_job_pid_dir, '/tmp'
 ################################################
 namespace :deploy do
   after :restart, :clear_cache do
@@ -36,11 +38,3 @@ namespace :deploy do
     end
   end
 end
-##### ADMIN ADDED to restart delayed_job at every deploy ######
-after 'deploy:publishing', 'deploy:restart'
-namespace :deploy do
-  task :restart do
-    invoke 'delayed_job:restart'
-  end
-end
-###################################################################
