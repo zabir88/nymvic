@@ -28,6 +28,7 @@ set :puma_preload_app, false
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 set :linked_dirs, %w(tmp/pids)
 ################################################
+after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
@@ -37,4 +38,8 @@ namespace :deploy do
       # end
     end
   end
+  task :restart do
+    invoke 'delayed_job:restart'
+  end
 end
+
