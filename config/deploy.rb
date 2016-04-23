@@ -1,5 +1,3 @@
-# config valid only for current version of Capistrano
-
 set :application, 'nymvic'
 set :repo_url, 'https://github.com/zabir88/nymvic.git' # Edit this to match your repository
 set :branch, :master
@@ -27,11 +25,8 @@ set :puma_init_active_record, true
 set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
-set :linked_dirs, %w{tmp/pids}
 ################################################
-
 namespace :deploy do
-
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
@@ -40,5 +35,12 @@ namespace :deploy do
       # end
     end
   end
-
 end
+##### ADMIN ADDED to restart delayed_job at every deploy ######
+after 'deploy:publishing', 'deploy:restart'
+namespace :deploy do
+  task :restart do
+    invoke 'delayed_job:restart'
+  end
+end
+###################################################################
