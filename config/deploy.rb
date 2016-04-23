@@ -26,8 +26,8 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
-
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+set :linked_dirs, %w{tmp/pids}
 ################################################
 
 namespace :deploy do
