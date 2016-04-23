@@ -26,7 +26,7 @@ set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 set :delayed_job_roles, [:app, :background]
-set :delayed_job_pid_dir, '/tmp'
+set :linked_dirs, %w(tmp/pids)
 ################################################
 namespace :deploy do
   after :restart, :clear_cache do
