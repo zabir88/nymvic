@@ -21,6 +21,6 @@ every 1.day, :at=> '12:36 pm' do
 	runner "SendSmsJob.perform_later"
 end
 
-every 1.day, :at=> '02:10 pm' do
+every 1.day, :at=> '02:14 pm' do
 	runner "SendEmailJob.perform_later"
 end
