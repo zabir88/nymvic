@@ -5,6 +5,7 @@
 
 # Example:
 #set :environment, "development"
+set :environment, "production"
 set :output, {:error=> "log/cron_error_log.log", :standard=> 'log/cron_log.log'}
 #
 # every 2.hours do
@@ -16,10 +17,10 @@ set :output, {:error=> "log/cron_error_log.log", :standard=> 'log/cron_log.log'}
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
-every 1.day, :at=> '3:32 am' do
+every 1.day, :at=> '3:50 am' do
 	runner "SendSmsJob.perform_later"
 end
 
-every 1.day, :at=> '3:32 am' do
+every 1.day, :at=> '3:50 am' do
 	runner "SendEmailJob.perform_later"
 end
