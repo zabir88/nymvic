@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.1'
+lock '3.4.0'
 set :application, 'nymvic'
 set :repo_url, 'https://github.com/zabir88/nymvic.git' # Edit this to match your repository
 set :branch, :master
@@ -26,7 +26,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_preload_app, false
 #### For delayed_job and whenever gem ##########
-set :linked_dirs, %w{tmp/pids}
+
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 ################################################
 
