@@ -2,82 +2,53 @@
 <% modal ||= false %>
 <% remote = modal ? true : false %>
 <%= form_for(@user, remote: remote, html: {role: :form, 'data-model' => 'user'}) do |f| %>
-
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <%# Added Bootstrap classes, and help-block container for error messages %>
   <div class="form-group">
     <%= f.label :first_name, class: 'control-label' %><br>
     <%= f.text_field :first_name, class: 'form-control' %>
     <span class="help-block"></span>
   </div>
-
-  <%# Added Bootstrap classes, and help-block container for error messages %>
   <div class="form-group">
     <%= f.label :last_name, class: 'control-label' %><br>
     <%= f.text_field :last_name, class: 'form-control' %>
     <span class="help-block"></span>
   </div>
-
-  <%# Added Bootstrap classes, and help-block container for error messages %>
   <div class="form-group">
     <%= f.label :birth_year, class: 'control-label' %><br>
     <%= f.text_field :birth_year, class: 'form-control' %>
     <span class="help-block"></span>
   </div>
-
-  <%# Added Bootstrap classes, and help-block container for error messages %>
   <div class="form-group">
     <%= f.label :gender, class: 'control-label' %><br>
     <%= f.select :gender, options_for_select(['Please Select', 'Male', 'Female'], disabled: 'Please Select', selected: 'Please Select'), {}, {class: 'form-control'} %>
     <span class="help-block"></span>
   </div>
-
-  <%# Added Bootstrap classes, and help-block container for error messages %>
   <div class="form-group">
     <%= f.label :marital_status, class: 'control-label' %><br>
     <%= f.select :marital_status, options_for_select(['Please Select', 'Single', 'Married', 'Divorced', 'Widowed'], disabled: 'Please Select', selected: 'Please Select'), {}, {class: 'form-control'} %>
     <span class="help-block"></span>
   </div>
-
   <div class="form-group">
     <%= f.label :children, class: 'control-label' %><br>
     <%= f.select :children, options_for_select(['Please Select', 'Yes', 'No'], disabled: 'Please Select', selected: 'Please Select'), {}, {class: 'form-control'} %>
     <span class="help-block"></span>
   </div>
-
   <div class="form-group">
     <%= f.label :party_affliation, class: 'control-label' %><br>
     <%= f.select :party_affliation, options_for_select(['Please Select', 'Democrat', 'Republican', 'Other'], disabled: 'Please Select', selected: 'Please Select'), {}, {class: 'form-control'} %>
     <span class="help-block"></span>
   </div>
-
   <div class="form-group">
     <%= f.label :email, class: 'control-label' %><br>
     <%= f.text_field :email, class: 'form-control' %>
     <span class="help-block"></span>
   </div>
-
   <div class="form-group">
-    <%= f.label :telephone, class: 'control-label' %><br>
+    <%= f.label 'Phone', class: 'control-label' %><br>
     <%= f.text_field :telephone, class: 'form-control' %>
     <span class="help-block"></span>
   </div>
-
-
-  <%# Added Bootstrap classes %>
   <div class="actions">
     <%= f.submit 'Submit', class: 'btn btn-default grow' %>
   </div>
-
 <% end %>

@@ -14,6 +14,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   config.assets.prefix = "shared/public/assets"
+  
   config.action_mailer.delivery_method = :ses
   
   # Enable Rack::Cache to put a simple HTTP cache in front of your application

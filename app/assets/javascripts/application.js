@@ -41,11 +41,13 @@ $(function() {
 });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
+$(function(){
+$('.navbar-collapse ul li a').on('click',function() {
   if ($(this).attr('class') != 'dropdown-toggle active' && $(this).attr('class') != 'dropdown-toggle') {
     $('.navbar-toggle:visible').click();
   }
 });
+})
 
 //Carousel control speed change from default 5 secs to 3 secs
 $(function() {
