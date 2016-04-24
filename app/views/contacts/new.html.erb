@@ -6,7 +6,7 @@
 <div class='container'> 	
   <%= form_for(@contact, html: {role: :form}) do |f| %>
     <h2>Contact NYMVIC</h2>
-    <p>Feel free to contact us to provide some feedback, give us suggestions, or to just say hello! Leave your name, email to reach you and your message. </p>
+    <p>Feel free to contact us to provide some feedback, give us suggestions, or to just say hello! Leave your name, contact email and your message. </p>
     <div class='row'>
       <div class= 'col-sm-8 col-sm-offset-2'>
         <div class="form-group">
@@ -20,7 +20,7 @@
           <span class="alert-danger help-inline"><%= @contact.errors[:email].join(' & ') %></span>
         </div>
         <div class="form-group">
-          <%= f.label 'Comment', class: 'control-label' %>
+          <%= f.label 'Message', class: 'control-label' %>
           <%= f.text_area :content, size: '10x10', class: 'form-control' %>
           <span class="alert-danger help-inline"><%= @contact.errors[:content].join(' & ') %></span>
         </div>
