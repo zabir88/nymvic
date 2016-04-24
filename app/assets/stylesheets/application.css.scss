@@ -141,7 +141,7 @@ a:focus {
     height: auto;
     padding: 60px 0;
     text-align: center;
-    background: url(vote.jpg) no-repeat top left scroll;
+    background: image-url(vote.jpg) no-repeat top left scroll;
     background-color: #ff811a;
     /* WebKit */
     -webkit-background-size: 75% 100%;
@@ -254,7 +254,7 @@ a:focus {
     width: 100%;
     padding: 15px 0 15px 0;
     color: #fff;
-    background: url('capitol.png') no-repeat center center scroll;
+    background: image-url('capitol.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
