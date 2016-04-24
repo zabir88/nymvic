@@ -19,6 +19,7 @@ gem 'delayed_job_active_record', '~> 4.1' #for queueing background jobs
 gem 'daemons', '~> 1.2', '>= 1.2.3'# for queueing background jobs
 gem 'whenever', :require => false
 gem 'aws-ses', '~> 0.6.0', require: 'aws/ses'
+gem 'sprockets'
 #########################################
 group :development, :test do
   gem 'byebug'
@@ -40,7 +41,7 @@ group :development do
 ######### ADMIN ADDED ###################
   gem 'capistrano'
   gem 'capistrano3-puma'
-  gem 'capistrano-rails', '~> 1.1.3'
+  gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
 ##########################################
