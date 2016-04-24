@@ -40,7 +40,7 @@ group :development do
 ######### ADMIN ADDED ###################
   gem 'capistrano'
   gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
+  gem 'capistrano-rails', '~> 1.1.3'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
 ##########################################
