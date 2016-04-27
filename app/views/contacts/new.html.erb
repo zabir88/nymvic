@@ -4,7 +4,7 @@
 <!-- Contact Section -->
 <section id ="contact" class="content-section text-center"> 
 <div class='container'> 	
-  <%= form_for(@contact, html: {role: :form}) do |f| %>
+  <%= form_for @contact do |f| %>
     <h2>Contact NYMVIC</h2>
     <p>Feel free to contact us to provide some feedback, give us suggestions, or to just say hello! Leave your name, contact email and your message. </p>
     <div class='row'>
@@ -12,17 +12,17 @@
         <div class="form-group">
           <%= f.label :name, class: 'control-label' %>
           <%= f.text_field :name, class: 'form-control' %>
-          <span class="alert-danger help-inline"><%= @contact.errors[:name].join(' & ') %></span>
+          <span class="alert-danger help-block"><%= @contact.errors[:name].join(' & ') %></span>
         </div>          
         <div class="form-group">
           <%= f.label 'Contact Email', class: 'control-label' %>
           <%= f.text_field :email, class: 'form-control' %>
-          <span class="alert-danger help-inline"><%= @contact.errors[:email].join(' & ') %></span>
+          <span class="alert-danger help-block"><%= @contact.errors[:email].join(' & ') %></span>
         </div>
         <div class="form-group">
           <%= f.label 'Message', class: 'control-label' %>
           <%= f.text_area :content, size: '10x10', class: 'form-control' %>
-          <span class="alert-danger help-inline"><%= @contact.errors[:content].join(' & ') %></span>
+          <span class="alert-danger help-block"><%= @contact.errors[:content].join(' & ') %></span>
         </div>
         <div class='row'>
           <div class="actions">

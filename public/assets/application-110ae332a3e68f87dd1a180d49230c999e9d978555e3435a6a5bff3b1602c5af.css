@@ -8951,7 +8951,7 @@ a:focus {
   height: auto;
   padding: 60px 0;
   text-align: center;
-  background-image: url(vote.jpg);
+  background-image: url(/assets/vote-b25b51d9b135a90e1920e2e25775479b1125abdec0d958adc995370bec578a6f.jpg);
   background-attachment: scroll;
   background-position: top left;
   background-repeat: no-repeat;
@@ -9070,9 +9070,9 @@ a:focus {
   width: 100%;
   padding: 15px 0 15px 0;
   color: #fff;
-  background-image: url("capitol.png");
+  background-image: url(/assets/capitol-ebae2506d597edc4b306cf401ead972a90c42bfdba558e1d14770b42d6a5bc22.png);
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;

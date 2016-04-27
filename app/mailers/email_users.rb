@@ -9,7 +9,7 @@ class EmailUsers < ApplicationMailer
 
 	def reminder_email(user)
 		@user=user
-		mail(to: @user.email, subject: 'Important Voting Information from NYMVIC')
+		mail(to: @user.email, subject: 'Important Voters Information from NYMVIC')
 	end
 
 	def contact_email(contact)
