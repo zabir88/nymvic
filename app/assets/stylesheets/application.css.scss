@@ -15,18 +15,14 @@ body {
     background-color: #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
+
 h2 {
     color:#b30000;
 }
@@ -60,15 +56,16 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid rgba(255,255,255, 0.5);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color:#000;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 800;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 35px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -77,7 +74,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 14px;
     color: #F80000;
 }
 
@@ -118,7 +115,7 @@ a:focus {
 
 @media(min-width:1068px) {
     .navbar-custom {
-        padding: 12px 0;
+        padding: 20px 0;
         border-bottom: 0;
         font-size: 16px;
         letter-spacing: 1px;
@@ -133,12 +130,17 @@ a:focus {
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
+
+    .navbar-custom .navbar-brand {
+        font-weight: 800;
+        font-size: 40px;
+    }
 }
 
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 60px 0;
     text-align: center;
     background-image: image-url('vote.jpg');
@@ -161,7 +163,8 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 16px;
+    font-size: 20px;
+    width: 90%;
 } 
 
 @media(min-width:768px) {
@@ -309,6 +312,7 @@ a:focus {
     color: #F80000;;
     background-color: #fff;
 }
+
 /* footer buttons begin */
 .btn-outline {
   color: white;
@@ -337,6 +341,7 @@ a:focus {
   line-height: 45px;
 }
 /* footer buttons end */
+
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -395,7 +400,6 @@ body {
 
 /* carousel modification begin */
 .carousel {
-    border-radius: 50px 50px 50px 50px;
     overflow: hidden;
 }
 /* carousel modification ends */
