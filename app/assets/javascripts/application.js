@@ -25,5 +25,5 @@ $(function(){
     }
   });
 })
+//modal anim
 
-//Scroll Fading

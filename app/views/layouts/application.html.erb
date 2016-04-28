@@ -9,15 +9,15 @@
   
   
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
-  
+    <%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
     <!--Google Fonts and Bootstrap Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='//fonts.googleapis.com/css?family=Inknut+Antiqua&subset=latin,latin-ext,devanagari' rel='stylesheet' type='text/css'>
-  
-    <%= javascript_include_tag  'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+    
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <%= yield %>

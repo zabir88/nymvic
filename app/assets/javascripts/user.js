@@ -4,7 +4,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1200, 'easeInOutExpo');
         event.preventDefault();
     });
 });
@@ -47,3 +47,4 @@ $(document).ready(function(){
     });
   }
 }(jQuery));
+

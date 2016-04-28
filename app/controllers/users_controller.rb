@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         EmailUsers.welcome_email(@user).deliver_later
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to @user, notice: 'Thank You for joining us!' }
         format.js {render :index}
       else
         format.html { render :index }

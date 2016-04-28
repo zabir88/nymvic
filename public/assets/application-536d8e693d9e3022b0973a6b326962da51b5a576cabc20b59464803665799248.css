@@ -9061,8 +9061,8 @@ a:focus {
 }
 /* line 251, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
 .content-section {
-  padding-top: 50px;
-  padding-top: 50px;
+  padding-top: 75px;
+  padding-bottom: 25px;
 }
 
 /* line 256, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
@@ -9088,8 +9088,8 @@ a:focus {
 @media (min-width: 767px) {
   /* line 275, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
   .content-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 170px;
+    padding-bottom: 80px;
   }
 
   /* line 280, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
@@ -9279,3 +9279,7 @@ body {
 }
 
 /* end */
+/* line 438, /home/zabir/Desktop/railsapp/nymvic/app/assets/stylesheets/application.css.scss */
+.fadeInBlock {
+  opacity: 0;
+}
