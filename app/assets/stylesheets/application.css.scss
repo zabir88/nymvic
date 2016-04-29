@@ -58,13 +58,12 @@ a:focus {
     margin-bottom: 0;
     padding: 5px 0 5px 0;
     border-bottom: 1px solid rgba(255,255,255, 0.5);
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color:#000;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 35px;
 }
 
@@ -73,7 +72,6 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
     font-size: 14px;
     color: #F80000;
 }

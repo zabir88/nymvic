@@ -1,6 +1,1 @@
-$("#new_client").on("ajax:success", (e, data, status, xhr){
-  $("#clients").append("<li>" + data['name'] + "</li>")
-  $("#clients").effect("highlight")}
-).on("ajax:error", (e, data, status, xhr){
-  $("#step-clients form").render_form_errors('client', data.responseJSON)
-});
+$('.contact_form').render_form_errors("#{<%= @contact.errors %>}")

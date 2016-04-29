@@ -1,6 +1,6 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll').click(function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -22,6 +22,7 @@ $(function(){
     $(event.data).render_form_errors( $.parseJSON(jqxhr.responseText) );
   });
 });
+
 (function($) {
   $.fn.modal_success = function(){
     // close modal
