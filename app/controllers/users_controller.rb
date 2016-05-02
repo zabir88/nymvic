@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         format.html { render :index}
         format.js {render :index}
       else
-        format.html { render :index }
+        format.html {render :index}
         format.json { render json: @user.errors, status: :unprocessable_entity }
         format.js {render json: @user.errors, status: :unprocessable_entity}
       end

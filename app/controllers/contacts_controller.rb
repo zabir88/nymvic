@@ -9,12 +9,10 @@ class ContactsController < ApplicationController
       if @contact.valid?
         EmailUsers.contact_email(@contact).deliver_now
         flash[:notice] = "Thanks for reaching out. We will contact you shortly."
-        format.html {redirect_to root_path}
-        format.js {redirect_to root_path}
+        format.html {redirect_to '/#nymvic'}
       else
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
-        format.js {render json: @contact.errors, status: :unprocessable_entity}
       end
     end
   end
