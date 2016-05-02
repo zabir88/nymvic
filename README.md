@@ -1,3 +1,3 @@
-# nymvic
+#NYMVIC
 
-Visit at https://nymvic.herokuapp.com/
+Visit at https://nymvic.org/

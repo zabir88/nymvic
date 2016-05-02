@@ -15,7 +15,7 @@ class SendSmsJob < ActiveJob::Base
   end
   
   def perform
-  	User.all.each do |u|
+  	User.find_each(batch_size: 5000) do |u|
       send_text_message(u)
     end
   end
