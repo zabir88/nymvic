@@ -8,8 +8,9 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.valid?
         EmailUsers.contact_email(@contact).deliver_now
-        format.html { render :new, notice: 'Thank You for joining us!' }
-        format.js {render :new}
+        flash[:notice] = "Thanks for reaching out. We will contact you shortly."
+        format.html {redirect_to root_path}
+        format.js {redirect_to root_path}
       else
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
