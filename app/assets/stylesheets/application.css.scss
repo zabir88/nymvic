@@ -57,10 +57,10 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     padding: 5px 0 5px 0;
-    border-bottom: 1px solid rgba(255,255,255, 0.5);
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color:#000;
 }
+
 
 .navbar-custom .navbar-brand {
     font-weight: 800;
@@ -109,6 +109,24 @@ a:focus {
 
 .navbar-custom .nav li.active a:hover {
     color: #F80000;
+}
+
+.navbar-custom .dropdown .dropdown-menu {
+    padding-top: 20px;
+    background-color: #000;
+}
+
+.navbar-custom .dropdown-menu a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #F80000;   
+}
+
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffb833;
+    background-color: rgba(255,255,255,.6);
 }
 
 @media(min-width:1068px) {
