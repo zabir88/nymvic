@@ -9,13 +9,6 @@ $(function() {
     });
 });
 
-//Carousel control speed change from default 5 secs to 3 secs
-$(function() {
-    $('.carousel').carousel({
-      interval: 3500
-    })
-});
-
 //jQuery Form validation in modal
 $(function(){
   $(document).bind('ajaxError', 'form#new_user', function(event, jqxhr, settings, exception){

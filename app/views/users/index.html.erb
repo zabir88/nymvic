@@ -71,7 +71,7 @@
     <div class='container'>
       <div class="row">
         <div class="col-sm-12">
-          <div id="carousel-example-generic" class="carousel slide">
+          <div id="carousel-example-generic" class="carousel slide carousel-fade" data-interval="4000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -81,7 +81,7 @@
               <li data-target="#carousel-example-generic" data-slide-to="4"></li>
             </ol>
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role='listbox'>
+            <div class="carousel-inner">
               <div class="item active">
                 <%= image_tag "slide1.png", width: "100%", :class=> "img-responsive" %>
               </div>
@@ -99,11 +99,11 @@
               </div>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button", data-slide="prev">
-              <span class="icon-prev"></span>
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button", data-slide="next">
-              <span class="icon-next"></span>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
           </div>    
         </div>

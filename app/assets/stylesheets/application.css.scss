@@ -414,12 +414,6 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-/* carousel modification begin */
-.carousel {
-    overflow: hidden;
-}
-/* carousel modification ends */
-
 .well-buttons{
     background-color: transparent;
     border-color: transparent;
@@ -434,7 +428,7 @@ body {
 }
 /* end */
 
-/* modal postion centered */
+/************ modal postion and animation *************/
 .modal {
   text-align: center;
   padding: 0!important;
@@ -453,7 +447,6 @@ body {
   text-align: left;
   vertical-align: middle;
 }
-/* end */ 
 
 .modal.fade .modal-dialog {
     -webkit-transform: scale(0.1);
@@ -476,3 +469,35 @@ body {
     transform: translate3d(0, -300px, 0);
     opacity: 1;
 }
+/************** end *******************/ 
+
+/********* Carousel Aimation *********/
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/************ End ************/
