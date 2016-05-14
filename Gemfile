@@ -20,6 +20,7 @@ gem 'daemons', '~> 1.2', '>= 1.2.3'# for queueing background jobs
 gem 'whenever', :require => false
 gem 'aws-ses', '~> 0.6.0', require: 'aws/ses'
 gem 'simple_form'
+gem 'roo'
 #########################################
 group :development, :test do
   gem 'byebug'

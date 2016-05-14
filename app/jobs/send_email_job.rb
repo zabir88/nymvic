@@ -3,7 +3,10 @@ class SendEmailJob < ActiveJob::Base
 
   def perform
   	User.find_each(batch_size: 5000) do |u|
-    	EmailUsers.reminder_email(u).deliver_now
+  		if u.select{|i| i.email.match(/\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/)}
+  			
+  		end
+  		#EmailUsers.reminder_email(u).deliver_now
   	end
   end
 end
