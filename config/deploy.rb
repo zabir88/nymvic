@@ -27,6 +27,8 @@ set :puma_preload_app, false
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 set :linked_dirs, %w(tmp/pids)
 ################################################
+load 'lib/deploy/seed'
+
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   after :restart, :clear_cache do
@@ -39,10 +41,6 @@ namespace :deploy do
   end
   task :restart do
     invoke 'delayed_job:restart'
-  end
-
-  task :seed do
-    invoke 'xxx'
   end
 end
 
