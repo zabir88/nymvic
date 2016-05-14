@@ -27,7 +27,7 @@ set :puma_preload_app, false
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 set :linked_dirs, %w(tmp/pids)
 ################################################
-load 'lib/deploy/seed'
+load '/lib/deploy/seed'
 
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
