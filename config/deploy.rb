@@ -27,7 +27,25 @@ set :puma_preload_app, false
 set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 set :linked_dirs, %w(tmp/pids)
 ################################################
+desc 'Runs rake db:seed'
+task :seed => [:set_rails_env] do
+  on primary fetch(:migration_role) do
+    within release_path do
+      with rails_env: fetch(:rails_env) do
+        execute :rake, "db:seed"
+      end
+    end
+  end
+end
+
+
+
+
 after 'deploy:publishing', 'deploy:restart'
+
+
+
+
 namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
@@ -41,13 +59,4 @@ namespace :deploy do
     invoke 'delayed_job:restart'
   end
 end
-desc 'Runs rake db:seed'
-task :seed => [:set_rails_env] do
-  on primary fetch(:migration_role) do
-    within release_path do
-      with rails_env: fetch(:rails_env) do
-        execute :rake, "db:seed"
-      end
-    end
-  end
-end
+
