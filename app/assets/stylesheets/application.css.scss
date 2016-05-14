@@ -202,7 +202,7 @@ a:focus {
     border-radius: 100%!important;
     font-size: 30px;
     color: #F80000;
-    background:rgba(255,255,255,.3);
+    background:rgba(255,255,255,.2);
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -472,9 +472,6 @@ body {
 /************** end *******************/ 
 
 /********* Carousel Aimation *********/
-.carousel {
-    overflow: hidden;
-}
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;

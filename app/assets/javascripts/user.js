@@ -21,7 +21,6 @@ $(function(){
     // close modal
     this.modal('hide');
     // clear form input elements
-    // todo/note: handle textarea, select, etc
     this.find('form input[type="text"]').val('');
     // clear error state
     this.clear_previous_errors();
