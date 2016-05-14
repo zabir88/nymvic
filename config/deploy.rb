@@ -39,6 +39,9 @@ namespace :deploy do
   end
   task :restart do
     invoke 'delayed_job:restart'
+  end
+
+  task :seed do
     invoke 'xxx'
   end
 end
