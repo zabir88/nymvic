@@ -54,6 +54,8 @@ a:focus {
     color: #ffb833;
 }
 
+/******** NavBar *********/
+
 .navbar-custom {
     margin-bottom: 0;
     padding: 5px 0 5px 0;
@@ -112,7 +114,6 @@ a:focus {
 }
 
 .navbar-custom .dropdown .dropdown-menu {
-    padding-top: 20px;
     background-color: #000;
 }
 
@@ -125,13 +126,13 @@ a:focus {
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffb833;
+    color:#ffb833;
     background-color: rgba(255,255,255,.6);
 }
 
 @media(min-width:1068px) {
     .navbar-custom {
-        padding: 20px 0;
+        padding: 30px 0 5px 0;
         border-bottom: 0;
         font-size: 16px;
         letter-spacing: 1px;
@@ -152,6 +153,8 @@ a:focus {
         font-size: 40px;
     }
 }
+
+/********* NavBar End ***********/
 
 .intro {
     display: table;
@@ -329,7 +332,7 @@ a:focus {
     background-color: #fff;
 }
 
-/* footer buttons begin */
+/*********** footer buttons begin ***********/
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -356,7 +359,7 @@ a:focus {
   font-size: 20px;
   line-height: 45px;
 }
-/* footer buttons end */
+/********* footer buttons end ************/
 
 ul.banner-social-buttons {
     margin-top: 0;
@@ -428,7 +431,7 @@ body {
 }
 /* end */
 
-/************ modal postion and animation *************/
+/************modal postion and animation*************/
 .modal {
   text-align: center;
   padding: 0!important;
