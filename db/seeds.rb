@@ -1,19 +1,35 @@
-data= [{first_name: 'Jesmina',
-		last_name: 'Hossain',
-		birth_year: '1960',
-		gender: 'female',
-		marital_status: 'married',
-		children: 'yes',
-		party_affliation: 'Democrat',
-		email: 'jesmina_hossain@yahoo.com',
-		telephone: '6463014129'
-	}
-]
+require 'roo'
+require 'resolv'
 
-data.each do |u|
-	User.create(first_name: u[:first_name] , last_name: u[:last_name],
-				birth_year: u[:birth_year], gender:u[:gender],
-				marital_status: u[:marital_status], children: u[:children],
-				party_affliation: u[:party_affliation], email: u[:email],
-				telephone: u[:telephone])
+open_data= Roo::Spreadsheet.open('/home/zabir/Desktop/nymvicdata.xlsx')
+parsed_data= open_data.parse(email: 'email', first_name: 'first_name', last_name: 'last_name')
+
+def valid_email_domain(email)
+    domain = email.match(/\@(.+)/)[1]
+    Resolv::DNS.open do |dns|
+      @mx = dns.getresources(domain, Resolv::DNS::Resource::IN::MX)
+   	end
+    @mx.size > 0 ? true : false
+end
+
+def valid_email(email)
+	return true if email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i && valid_email_domain(email)==true
+	return false
+end
+
+users=parsed_data
+users.map{|u| u[:email]='' if valid_email(u[:email]) != true} 
+sorted_users=users.sort_by{|u| u[:email]}
+
+
+sorted_users.each do |u|
+	User.create(first_name: u[:first_name], 
+				last_name: u[:last_name],
+				birth_year: '', 
+				gender: '',
+				marital_status: '', 
+				children: '',
+				party_affliation: '', 
+				email: u[:email],
+				telephone: '')
 end
