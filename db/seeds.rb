@@ -1,3 +1,4 @@
+=begin
 require 'roo'
 require 'resolv'
 
@@ -33,3 +34,4 @@ sorted_users.each do |u|
 				email: u[:email],
 				telephone: '')
 end
+=end
