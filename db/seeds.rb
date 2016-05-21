@@ -1,7 +1,7 @@
 require 'roo'
 require 'resolv'
 
-open_data= Roo::Excelx.new('db/nymvicdata.xlsx')
+open_data= Roo::Excelx.new(Rails.root.join('db', 'nymvicdata.xlsx'))
 parsed_data= open_data.parse(email: 'email', first_name: 'first_name', last_name: 'last_name')
 
 def valid_email_domain(email)
