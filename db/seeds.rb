@@ -18,7 +18,8 @@ def valid_email(email)
 	return false
 end
 
-users=parsed_data
+
+users=parsed_data[1..2742]
 users.map{|u| u[:email]='' if valid_email(u[:email]) != true} 
 sorted_users=users.sort_by{|u| u[:email]}
 
