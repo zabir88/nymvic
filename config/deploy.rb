@@ -44,14 +44,7 @@ namespace :deploy do
   end
 
   task :seed do
-    on primary fetch(:migration_role) do
-      within release_path do
-        with rails_env: fetch(:rails_env)  do
-          execute :rake, 'db:seed'
-        end
-      end
-    end
+    run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
   end
-
 end
 
