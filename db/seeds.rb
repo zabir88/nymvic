@@ -1,16 +1,34 @@
-sorted_user=[
-	{first_name: "zabir",
-	 last_name: "hossain",
-	 birth_year: "1988",
-	 gender: "male",
-	 marital_status: "single",
-	 children: "no",
-	 party_affliation: "democrat",
-	 email: "zabir8809@gmail.com",
-	 telephone: "6463014129"
-	}
-]
+require 'roo'
+require 'resolv'
 
-sorted_user.each do |u|
-	User.create(u)
+open_data= Roo::Spreadsheet.open('db/nymvicseeddata.xlsx')
+parsed_data= open_data.parse(email: 'email', first_name: 'first_name', last_name: 'last_name')
+
+def valid_email_domain(email)
+    domain = email.match(/\@(.+)/)[1]
+    Resolv::DNS.open do |dns|
+      @mx = dns.getresources(domain, Resolv::DNS::Resource::IN::MX)
+   	end
+    @mx.size > 0 ? true : false
+end
+
+def valid_email(email)
+	return true if email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i && valid_email_domain(email)==true
+	return false
+end
+
+users=parsed_data[1..5]
+users.map{|u| u[:email]='' if valid_email(u[:email]) != true} 
+sorted_users=users.sort_by{|u| u[:email]}
+
+sorted_users.each do |u|
+	User.create(first_name: u[:first_name],
+				last_name: u[:last_name],
+				birth_year: '',
+				gender: '',
+				marital_status: '',
+				children: '',
+				party_affliation: '',
+				email: u[:email],
+				telephone: '')
 end
