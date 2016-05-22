@@ -1,7 +1,8 @@
 require 'roo'
 require 'resolv'
 
-open_data= Roo::Excelx.new('public/nymvicseeddata.xlsx', extension: :xlsx)
+file= File.join(RAILS_ROOT, 'lib', 'capistrano', 'tasks', 'nymvicseeddata.xlsx')
+open_data= Roo::Spreadsheet.open(file)
 parsed_data= open_data.parse(email: 'email', first_name: 'first_name', last_name: 'last_name')
 
 def valid_email_domain(email)
