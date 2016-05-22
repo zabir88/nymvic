@@ -1,7 +1,7 @@
 require 'roo'
 require 'resolv'
 
-file= File.join(RAILS_ROOT, 'lib', 'capistrano', 'tasks', 'nymvicseeddata.xlsx')
+file= File.join(Rails.root, 'lib', 'capistrano', 'tasks', 'nymvicseeddata.xlsx')
 open_data= Roo::Spreadsheet.open(file)
 parsed_data= open_data.parse(email: 'email', first_name: 'first_name', last_name: 'last_name')
 
