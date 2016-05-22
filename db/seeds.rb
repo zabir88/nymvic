@@ -18,9 +18,10 @@ def valid_email(email)
 	return false
 end
 
-users=parsed_data[1..5]
+users=parsed_data
 users.map{|u| u[:email]='' if valid_email(u[:email]) != true} 
 sorted_users=users.sort_by{|u| u[:email]}
+
 
 sorted_users.each do |u|
 	User.create(first_name: u[:first_name],
