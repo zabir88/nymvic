@@ -69,32 +69,26 @@
     <h2>Our Latest News and Events</h2><br>
     <h4>Click below to find out our latest events.</h4><br>
     <div class='container'>
-      <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride='carousel' data-interval='3000' data-pause='false'>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag "slide1.png", width: "100%", :class=> "img-responsive" %>
-          </div>
-          <div class="item">
-            <%= image_tag "slide2.png", width: "100%", :class=> "img-responsive" %>
-          </div>
-          <div class="item">
-            <%= image_tag "slide3.png", width: "100%", :class=> "img-responsive" %>
-          </div>
-          <div class="item">
-            <%= image_tag "slide4.png", width: "100%", :class=> "img-responsive" %>
-          </div>
-          <div class="item">
-            <%= image_tag "slide5.png", width: "100%", :class=> "img-responsive" %>
+      <div class='row'>
+        <div class='col-sm-12'>
+          <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride='carousel' data-interval='3000' data-pause='false'>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active"><%= image_tag "slide1.png", width: "100%", :class=> "img-responsive"%></div>
+              <div class="item"><%= image_tag "slide2.png", width: "100%", :class=> "img-responsive" %></div>
+              <div class="item"><%= image_tag "slide3.png", width: "100%", :class=> "img-responsive" %></div>
+              <div class="item"><%= image_tag "slide4.png", width: "100%", :class=> "img-responsive" %></div>
+              <div class="item"><%= image_tag "slide5.png", width: "100%", :class=> "img-responsive" %></div>
+            </div>
+          <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
           </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
       </div>    
     </div>
   </section>
