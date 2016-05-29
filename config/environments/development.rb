@@ -18,17 +18,15 @@ Rails.application.configure do
   config.action_mailer.default_url_options={:host=> 'localhost:3000'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-   address:              'smtp.gmail.com',
+   address:              ' smtp.zoho.com',
    port:                 '587',
-   domain:               'gmail.com',
-   user_name:             ENV['gmail_user_name'],
-   password:              ENV['gmail_password'],
+   domain:               'nymvic.org',
+   user_name:             ENV['user_name'],
+   password:              ENV['password'],
    authentication:       'plain',
    enable_starttls_auto: true  
   }
-  # Send email in development mode?
-  config.action_mailer.perform_deliveries = true
-
+  
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
