@@ -1,12 +1,11 @@
 class ContactEmail < ApplicationMailer
-
+	
 	self.smtp_settings = {  
     	:address => 'smtp.zoho.com',
     	:authentication => :login,
-    	domain: 'nymvic.org',
     	:user_name => ENV['INBOUNDEMAIL_USER_NAME'],
     	:password => ENV['INBOUNDEMAIL_PASSWORD'],
-    	:enable_starttls_auto => true,
+    	tsl: true,
     	:port => 587
   	}	
 

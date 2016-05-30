@@ -1,3 +1,4 @@
+lock '3.5.0'
 set :application, 'nymvic'
 set :repo_url, 'https://github.com/zabir88/nymvic.git' # Edit this to match your repository
 set :branch, :master
