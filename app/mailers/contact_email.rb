@@ -5,7 +5,7 @@ class ContactEmail < ApplicationMailer
     	:authentication => :login,
     	:user_name => ENV['INBOUNDEMAIL_USER_NAME'],
     	:password => ENV['INBOUNDEMAIL_PASSWORD'],
-    	tsl: true,
+    	:enable_starttls_auto => true,
     	:port => 587
   	}	
 
