@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(secure_params)
     respond_to do |format|
       if @contact.valid?
-        EmailUsers.contact_email(@contact).deliver_now
+        ContactEmail.contact_email(@contact).deliver_now
         flash[:notice] = "Thanks for reaching out. We will contact you shortly."
         format.html {redirect_to '/#nymvic'}
       else

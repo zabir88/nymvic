@@ -1,15 +1,9 @@
 Rails.application.configure do
+  
   #Action Mailer Configuration
   config.action_mailer.delivery_method = :smtp  
-  config.action_mailer.smtp_settings = {  
-    :address => 'email-smtp.us-west-2.amazonaws.com',
-    :authentication => :login,
-    :user_name => ENV['USER_NAME'],
-    :password => ENV['PASSWORD'],
-    :enable_starttls_auto => true,
-    :port => 465
-  }
-
+  config.action_mailer.raise_delivery_errors = true
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

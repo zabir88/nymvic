@@ -1,4 +1,14 @@
 class EmailUsers < ApplicationMailer
+	
+	self.smtp_settings = {  
+    	:address => 'email-smtp.us-west-2.amazonaws.com',
+    	:authentication => :login,
+    	:user_name => ENV['USER_NAME'],
+    	:password => ENV['PASSWORD'],
+    	:enable_starttls_auto => true,
+    	:port => 465
+  	}	
+	
 	default from: 'outreach@nymvic.org'
 
 	def welcome_email(user)
@@ -11,9 +21,4 @@ class EmailUsers < ApplicationMailer
 		@user=user
 		mail(to: @user.email, subject: 'Important Voters Information from NYMVIC')
 	end
-
-	def contact_email(contact)
-    	@contact = contact
-    	mail(to: ENV['NYMVIC_CONTACT_EMAIL'], from: @contact.email, subject: "NYMVIC User's Request")
-  	end
 end
