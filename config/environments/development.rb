@@ -1,4 +1,15 @@
 Rails.application.configure do
+  #Action Mailer Configuration
+  config.action_mailer.delivery_method = :smtp  
+  config.action_mailer.smtp_settings = {  
+    :address => 'email-smtp.us-west-2.amazonaws.com',
+    :authentication => :login,
+    :user_name => ENV['USER_NAME'],
+    :password => ENV['PASSWORD'],
+    :enable_starttls_auto => true,
+    :port => 465
+  }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -13,20 +24,6 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options={:host=> 'localhost:3000'}
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-   address:              ' smtp.zoho.com',
-   port:                 '587',
-   domain:               'nymvic.org',
-   user_name:             ENV['user_name'],
-   password:              ENV['password'],
-   authentication:       'plain',
-   enable_starttls_auto: true  
-  }
-  
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 

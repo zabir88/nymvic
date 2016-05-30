@@ -1,5 +1,5 @@
 class EmailUsers < ApplicationMailer
-	default from: 'nymvic01@gmail.com'
+	default from: 'outreach@nymvic.org'
 
 	def welcome_email(user)
 		@user=user

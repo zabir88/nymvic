@@ -1,4 +1,16 @@
 Rails.application.configure do
+  
+  #Action Mailer Configuration
+  config.action_mailer.delivery_method = :smtp  
+  config.action_mailer.smtp_settings = {  
+    :address => 'email-smtp.us-west-2.amazonaws.com',
+    :authentication => :login,
+    :user_name => ENV['USER_NAME'],
+    :password => ENV['PASSWORD'],
+    :enable_starttls_auto => true,
+    :port => 465
+  }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -14,8 +26,6 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
   config.assets.prefix = "/shared/public/assets"
-  
-  config.action_mailer.delivery_method = :ses
   
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
