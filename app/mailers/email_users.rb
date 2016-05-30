@@ -3,8 +3,8 @@ class EmailUsers < ApplicationMailer
 	self.smtp_settings = {  
     	:address => 'email-smtp.us-west-2.amazonaws.com',
     	:authentication => :login,
-    	:user_name => ENV['USER_NAME'],
-    	:password => ENV['PASSWORD'],
+    	:user_name => ENV['OUTBOUNDEMAIL_USER_NAME'],
+    	:password => ENV['OUTBOUNDEMAIL_PASSWORD'],
     	:enable_starttls_auto => true,
     	:port => 465
   	}	
