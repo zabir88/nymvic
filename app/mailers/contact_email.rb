@@ -1,16 +1,18 @@
 class ContactEmail < ApplicationMailer
-	
+	default from: 'nalmontaser@nymvic.org'
+
     self.smtp_settings = {  
-    	address: 'secure.emailsrvr.com',
+    	address: 'smtp.zoho.com',
+    	port: 587,
+        user_name: 'nalmontaser@nymvic.org',
+    	domain: 'nymvic.org',
+        password: ENV['INBOUNDEMAIL_PASSWORD'],
     	authentication: :login,
-    	user_name: ENV['INBOUNDEMAIL_USER_NAME'],
-    	password: ENV['INBOUNDEMAIL_PASSWORD'],
-    	enable_starttls_auto: true,
-        port: 587
+        enable_starttls_auto: true
   	}	
 
 	def contact_email(contact)
     	@contact = contact
-    	mail(to: ENV['NYMVIC_EMAIL'], from: @contact.email, subject: "NYMVIC User's Request")
+    	mail(to: 'nalmontaser@nymvic.org', from: @contact.email, subject: "NYMVIC User's Request")
   	end
 end

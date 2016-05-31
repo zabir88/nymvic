@@ -1,5 +1,6 @@
 class EmailUsers < ApplicationMailer
-	
+	default from: 'do-not-reply@nymvic.org'
+
 	self.smtp_settings = {  
     	address: 'email-smtp.us-west-2.amazonaws.com',
     	authentication: :login,
@@ -9,9 +10,6 @@ class EmailUsers < ApplicationMailer
     	tls: true,
     	port: 465
   	}	
-	
-	default from: 'outreach@nymvic.org'
-
 	def welcome_email(user)
 		@user=user
 		@url='https://nymvic.org'
