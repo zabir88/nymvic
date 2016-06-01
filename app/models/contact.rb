@@ -1,6 +1,8 @@
 class Contact
   
   include ActiveModel::Model
+  include ActiveModel::Conversion
+  include ActiveModel::Validations
   
   attr_accessor :name, :string
   attr_accessor :email, :string
