@@ -7,8 +7,7 @@ set :output, {:error=> "log/cron_error_log.log", :standard=> 'log/cron_log.log'}
 every :sunday, :at=> '7:16 pm' do
 	runner "SendSmsJob.perform_later"
 end
-
-every :sunday, :at=> '7:16 pm' do
+=end
+every :saturday, :at=> '6:15 pm' do
 	runner "SendEmailJob.perform_later"
 end
-=end

@@ -6,7 +6,7 @@ set :deploy_to, '/home/deploy/nymvic'
 set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
-set :keep_releases, 5
+set :keep_releases, 2
 set :rvm_type, :user
 set :rvm_ruby_version, '2.2.3' # Edit this if you are using MRI Ruby 
 set :puma_rackup, -> { File.join(current_path, 'config.ru') }
@@ -32,10 +32,7 @@ after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+    
     end
   end
   
