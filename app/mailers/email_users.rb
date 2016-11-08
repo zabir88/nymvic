@@ -1,5 +1,5 @@
 class EmailUsers < ApplicationMailer
-	default from: 'donot-reply@nymvic.org'
+	default from: 'do-not-reply@nymvic.org'
 
 	self.smtp_settings = {  
     	address: 'email-smtp.us-west-2.amazonaws.com',
