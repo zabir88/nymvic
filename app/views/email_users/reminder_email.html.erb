@@ -4,12 +4,20 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h5>Asalaamu Alaykum <%= @user.first_name %>, </h5>
-    <p>Tomorrow our Muslim community is meeting with congressman Keith Ellison from 12pm to 1:30pm at <b>Joy Restuarant(2nd floor) 148 east 46th street New York, NY.</b></p>
-    <p>Come and meet our first Muslim congressman in the USA.</p>
-    <p>Also don't forget to signup for our membership. Together we can make a difference. For more info visit <a href="https://nymvic.org/">nymvic.org</a>.</p> 
-    <p>Have a great day!</p><br>
+    <h4>Asalaamu Alaykum <%= @user.first_name %>,</h4>
+    
+    <p>Finally, election day is here, tomorrow Tuesday, November 9th.</p>
+    
+    <p>Time to make your vote count and your voice heard. Vote for <b>Hillary Clinton,</b> the most experienced and qualified to move this country forward to a brighter future.</p>
+    
+    <p><b>"Stronger, together".</b></p>
+    <%= image_tag('hillary.jpg') %>
+
+    <p>Please tell your family, friends, and neighbors to vote. Call, email or text them. Also, don't forget to signup for our membership. For more info visit <a href="https://nymvic.org/">nymvic.org</a>.</p>
+
+    <p><b>Together we can make a difference!</b></p><br> 
+    
     <p>Regards,</p>
-    <p>Your Brother in Islam Naji Almontaser</p>
+    NYMVIC
   </body>
 </html>

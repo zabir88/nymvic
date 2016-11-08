@@ -1,5 +1,5 @@
 class EmailUsers < ApplicationMailer
-	default from: 'do-not-reply@nymvic.org'
+	default from: 'donot-reply@nymvic.org'
 
 	self.smtp_settings = {  
     	address: 'email-smtp.us-west-2.amazonaws.com',
@@ -18,6 +18,6 @@ class EmailUsers < ApplicationMailer
 
 	def reminder_email(user)
 		@user=user
-		mail(to: @user.email, subject: 'Meet our brother in Islam and congressman Keith Ellison')
+		mail(to: @user.email, subject: 'Finally its Election Day!')
 	end
 end
