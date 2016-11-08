@@ -9,7 +9,7 @@ every :sunday, :at=> '7:16 pm' do
 end
 =end
 
-every :monday, :at=> '10:30 pm' do
+every :monday, :at=> '10:40 pm' do
 	runner "SendEmailJob.perform_later"
 end
 
